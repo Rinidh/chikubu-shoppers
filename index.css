@@ -1,0 +1,34 @@
+body {
+  all: unset;
+  font-family: "poppins";
+}
+
+header {
+  background-color: lightcyan;
+  height: 15vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+}
+
+nav {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav .products {
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+/* rgb(15, 57, 144) - logo blue */
