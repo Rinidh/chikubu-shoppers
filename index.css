@@ -1,10 +1,11 @@
 body {
   all: unset;
   font-family: "poppins";
+  color: rgb(15, 57, 144);
 }
 
 header {
-  background-color: lightcyan;
+  background-color: rgb(220, 229, 247);
   height: 15vh;
   width: 100vw;
   display: flex;
@@ -18,11 +19,13 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  font-weight: 700;
 }
 
 nav .products {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .nav-container {
@@ -31,4 +34,26 @@ nav .products {
   justify-content: center;
 }
 
-/* rgb(15, 57, 144) - logo blue */
+.dropdown {
+  border: 2px solid red;
+  border-radius: 8px;
+  background-color: rgb(220, 229, 247);
+  position: absolute;
+  top: 60px;
+  padding: 18px;
+}
+
+.dropdown div {
+  margin: 5px 0px;
+  border: 2px solid rgb(220, 229, 247);
+  border-radius: 5px;
+  padding: 3px 6px;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.dropdown div:hover {
+  border: 2px solid rgb(15, 57, 144);
+}
+
+
