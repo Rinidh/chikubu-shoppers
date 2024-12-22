@@ -22,7 +22,13 @@ nav {
   font-weight: 700;
 }
 
+nav div {
+  cursor: pointer;
+}
+
 nav .products {
+  border: 2px solid red;
+  height: 70px;  /*to easily hover into productsNav to show dropdown */
   display: flex;
   align-items: center;
   position: relative;
@@ -35,12 +41,12 @@ nav .products {
 }
 
 .dropdown {
-  border: 2px solid red;
   border-radius: 8px;
   background-color: rgb(220, 229, 247);
   position: absolute;
   top: 60px;
   padding: 18px;
+  display: none;
 }
 
 .dropdown div {
@@ -56,4 +62,7 @@ nav .products {
   border: 2px solid rgb(15, 57, 144);
 }
 
+.products:hover .dropdown {
+  display: block;
+}
 
