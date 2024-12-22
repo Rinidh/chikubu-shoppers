@@ -66,3 +66,12 @@ nav .products {
   display: block;
 }
 
+.products svg {
+  transition: transform 300ms ease
+
+}
+
+.products:hover svg {
+  transform: rotate(180deg);
+}
+
