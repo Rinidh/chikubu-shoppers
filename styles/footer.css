@@ -1,0 +1,31 @@
+.footer {
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(220, 229, 247);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.page-links-footer {
+  border: 2px solid red;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-links-footer a {
+  margin: 10px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.page-links-footer a:hover {
+  color: rgba(15, 58, 144, 0.48);
+}
+
+.page-links-footer {
+}
+
+.page-links-footer {
+}
