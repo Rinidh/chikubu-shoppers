@@ -13,5 +13,20 @@ main {
   margin-top: 20vh;
 }
 
+/* shop now button to be used in many other places */
+.shop-now-button {
+  border: 3px solid rgb(15, 57, 144);
+  border-radius: 8px;
+  padding: 11px 15px;
+  background-color: rgb(15, 57, 144);
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  transition: all 200ms ease;
+}
+.shop-now-button:hover {
+  background-color: rgb(220, 229, 247);
+  color: rgb(15, 57, 144);
+}
 
 
