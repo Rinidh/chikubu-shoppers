@@ -5,3 +5,5 @@ rgb(220, 229, 247) - 200
 
 
 link "our specialty" in hero sec to about pg, specific section
+add hrefs at footer links
+
