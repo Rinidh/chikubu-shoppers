@@ -20,12 +20,21 @@
   transition: all 200ms ease;
 }
 
+.social-media-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-media-footer i {
+  font-size: 40px;
+  transition: all 200ms ease;
+
+}
+
+.social-media-footer .fa-square-instagram:hover,
+.social-media-footer .fa-square-facebook:hover,
 .page-links-footer a:hover {
   color: rgba(15, 58, 144, 0.48);
-}
-
-.page-links-footer {
-}
-
-.page-links-footer {
 }
