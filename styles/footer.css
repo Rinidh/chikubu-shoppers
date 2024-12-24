@@ -7,7 +7,6 @@
 }
 
 .page-links-footer {
-  border: 2px solid red;
   padding-top: 40px;
   display: flex;
   flex-direction: column;
