@@ -1,0 +1,74 @@
+body {
+  all: unset;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.banner {
+  height: 40vh;
+  width: 100%;
+  position: relative;
+}
+
+.heading-banner {
+  border: 4px solid red;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+}
+
+.heading-banner .text-left {
+  flex: 1;
+  height: 100%;
+  background-color: rgb(15, 57, 144);
+  color: white;
+  font-family: "Fredoka";
+  font-size: 60px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-banner .freespace-right {
+  border: 4px solid yellow;
+
+  flex: 2;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(15, 57, 144),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.image-banner {
+  border: 4px solid blue;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  display: flex;
+}
+
+.image-banner .image-right {
+  flex: 2;
+  overflow: hidden;
+}
+
+.image-banner img {
+  width: 100%;
+  object-fit: fill;
+}
+
+.image-banner .freespace-left {
+  flex: 1;
+}
