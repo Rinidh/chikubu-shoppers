@@ -38,3 +38,10 @@
 .page-links-footer a:hover {
   color: rgba(15, 58, 144, 0.48);
 }
+
+.newsletter-footer {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-top: 50px;
+}

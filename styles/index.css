@@ -30,4 +30,49 @@ main {
   color: rgb(15, 57, 144);
 }
 
+.newsletter label {
+  display: block;
+}
 
+#heading-newsletter {
+  display: block;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.input-and-button {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row; /* default */
+}
+
+#email-input-newsletter {
+  min-width: 0px; /* for flex: --- to work well; */
+  flex: 3;
+  border: 4px solid rgb(15, 57, 144);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#email-input-newsletter:focus {
+  border: 4px solid white;
+}
+
+#submit-button-newsletter {
+  flex: 1;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 11px 15px;
+  background-color: rgb(15, 57, 144);
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  transition: all 200ms ease;
+}
+
+#submit-button-newsletter:hover {
+  background-color: rgba(15, 58, 144, 0.48);
+}
