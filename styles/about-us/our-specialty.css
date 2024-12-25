@@ -1,0 +1,17 @@
+.text-container {
+  display: flex;
+}
+
+.text-container .english {
+  flex: 1;
+}
+
+.text-container .luganda {
+  flex: 1;
+}
+
+.english h4 {
+  margin-left: 40px;
+  margin-top: 77px;
+  margin-bottom: 5px;
+}
