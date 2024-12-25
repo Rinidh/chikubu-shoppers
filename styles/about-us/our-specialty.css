@@ -12,6 +12,26 @@
 
 .english h4 {
   margin-left: 40px;
-  margin-top: 77px;
+  margin-top: 82px;
   margin-bottom: 5px;
+}
+
+.vision-english {
+  display: flex;
+  flex-direction: row;
+}
+
+.vision-english i {
+  border: 2px solid red;
+  flex: 1;
+  font-size: 25px;
+}
+
+.vision-english i:nth-of-type(2) {
+  display: flex;
+  align-items: end;
+}
+
+.vision-english #text {
+  flex: 20;
 }
