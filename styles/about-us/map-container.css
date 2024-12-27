@@ -1,0 +1,16 @@
+.map-container {
+  height: 400px;
+  width: 100%;
+}
+
+.map-container .heading-text-block {
+  border-bottom: none;
+  margin-bottom: 0px;
+}
+
+.map-container iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+  margin-bottom: 60px;
+}

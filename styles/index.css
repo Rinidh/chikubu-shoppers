@@ -116,6 +116,7 @@ main {
 }
 
 .heading-container h1 {
+  color: rgb(15, 57, 144);
   margin: 0px;
   flex: 1;
   font-size: 40px;
