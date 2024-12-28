@@ -10,3 +10,9 @@ link "our specialty" in hero sec to about pg, specific section
 add hrefs at footer links
 do home pg last
 change map theme to blue
+
+
+------------------------
+
+
+

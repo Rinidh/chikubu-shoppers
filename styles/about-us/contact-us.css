@@ -33,9 +33,4 @@
 .asterisk-required {
   font-size: 30px;
   color: red;
-  position: absolute;
-}
-
-.form-segment:nth-of-type(2) .asterisk-required {
-  left: 140px;
 }
