@@ -12,7 +12,12 @@
       <form action="">
         <div class="form-segment">
           <label for="name">Name</label>
-          <input id="name" type="text" name="name" />
+          <input
+            placeholder="Common-name Surname "
+            id="name"
+            type="text"
+            name="name"
+          />
         </div>
 
         <div class="form-segment">
@@ -21,7 +26,13 @@
             <span class="asterisk-required">*</span>
           </label>
 
-          <input type="email" id="email" name="email" required />
+          <input
+            placeholder="abc@gmail.com"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
         </div>
 
         <div class="form-segment">
@@ -50,6 +61,14 @@
               <label for="other">Other</label>
             </div>
           </div>
+        </div>
+
+        <div class="form-segment">
+          <textarea
+            rows="5"
+            cols="20"
+            placeholder="Please specify other reasons"
+          ></textarea>
         </div>
       </form>
     </div>
