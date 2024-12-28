@@ -4,6 +4,7 @@
   position: relative;
 }
 
+/* banner has two layers: image-banner at back and heading-banner on top */
 .heading-banner {
   position: absolute;
   top: 0px;
