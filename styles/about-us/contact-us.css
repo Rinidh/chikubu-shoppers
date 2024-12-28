@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
+  position: relative;
 }
 
 .form-segment label {
@@ -27,4 +28,14 @@
 
 .form-segment input:focus {
   border: 4px solid white;
+}
+
+.asterisk-required {
+  font-size: 30px;
+  color: red;
+  position: absolute;
+}
+
+.form-segment:nth-of-type(2) .asterisk-required {
+  left: 140px;
 }
