@@ -6,7 +6,8 @@ rgb(220, 229, 247) - 200
 rgb(220, 229, 247) - 200
 
 
-same style all butt
+mailto in contact-info
+click on advert div to focus on left form
 link "our specialty" in hero sec to about pg, specific section
 add hrefs at footer links
 do home pg last

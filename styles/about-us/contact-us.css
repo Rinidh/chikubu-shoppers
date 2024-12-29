@@ -1,11 +1,59 @@
 .form-external-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  padding: 0px 40px;
 }
 
 .contact-us iframe {
   height: 140vh;
   width: 50%;
+  border: none;
+}
+
+.contact-info {
+  padding: 30px 0px;
+  max-width: 30%;
+  margin-left: 20px;
+  border: 10px solid rgb(220, 229, 247);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.contact-info div {
   border: 2px solid red;
+  margin: 25px;
+}
+
+.contact-info i {
+  font-size: 30px;
+}
+
+.advert-info {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgb(255, 240, 242);
+  display: flex;
+  transition: all 200ms ease;
+}
+
+.advert-info:hover {
+  background-color: rgb(239, 199, 204);
+}
+
+.advert-info i {
+  color: red;
+  font-size: 35px;
+}
+
+.advert-info div {
+  margin: 0px;
+  margin-left: 5px;
+}
+
+.advert-info span {
+  font-size: 25px;
+  font-weight: 700;
 }
