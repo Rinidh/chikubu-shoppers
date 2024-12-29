@@ -23,7 +23,6 @@ textarea {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
-  position: relative;
 }
 
 .form-segment label {
@@ -73,4 +72,26 @@ input[type="radio"]:checked,
 input[type="radio"]:active {
   border: 3px solid rgb(220, 229, 247);
   background-color: rgb(15, 57, 144);
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+}
+
+.button-container input {
+  border: 3px solid rgb(15, 57, 144);
+  border-radius: 8px;
+  padding: 11px 15px;
+  background-color: rgb(15, 57, 144);
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.button-container input:hover {
+  background-color: rgb(220, 229, 247);
+  color: rgb(15, 57, 144);
 }
