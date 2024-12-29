@@ -1,97 +1,11 @@
-textarea {
-  padding: 10px;
-  font-size: 25px;
-  font-family: "poppins";
-  border: 4px solid rgb(15, 57, 144);
-  border-radius: 8px;
-  resize: vertical;
-}
-
-::placeholder {
-  font: 300 normal 20px "poppins";
-  color: rgba(15, 58, 144, 0.5);
-}
-
-.form-container {
-  background-color: rgb(220, 229, 247);
-  border: none;
-  border-radius: 10px;
-  padding: 50px 30px;
-}
-
-.form-segment {
+.form-external-container {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
-.form-segment label {
-  display: block;
-  font: 400 normal 25px "Merriweather";
-  margin-bottom: 8px;
-}
-
-.form-segment input {
-  padding: 10px;
-  flex: 1;
-  font-size: 25px;
-  font-family: "poppins";
-  border: 4px solid rgb(15, 57, 144);
-  border-radius: 8px;
-}
-
-.form-segment input:focus {
-  border: 4px solid white;
-}
-
-.asterisk-required {
-  font-size: 30px;
-  color: red;
-}
-
-.reason-radio-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.reason-radio-group label {
-  display: inline-block;
-  font: 400 normal 28px "Merriweather";
-}
-
-input[type="radio"] {
-  appearance: none; /* to hide the default browser button; */
-  height: 13px;
-  width: 13px;
-  border: 3px solid rgb(15, 57, 144);
-  background-color: rgb(220, 229, 247);
-  transition: all 150ms ease;
-}
-
-input[type="radio"]:checked,
-input[type="radio"]:active {
-  border: 3px solid rgb(220, 229, 247);
-  background-color: rgb(15, 57, 144);
-}
-
-.button-container {
-  display: flex;
-  justify-content: end;
-}
-
-.button-container input {
-  border: 3px solid rgb(15, 57, 144);
-  border-radius: 8px;
-  padding: 11px 15px;
-  background-color: rgb(15, 57, 144);
-  color: white;
-  font-weight: 700;
-  font-size: 20px;
-  cursor: pointer;
-  transition: all 200ms ease;
-}
-
-.button-container input:hover {
-  background-color: rgb(220, 229, 247);
-  color: rgb(15, 57, 144);
+.contact-us iframe {
+  height: 140vh;
+  width: 50%;
+  border: 2px solid red;
 }
