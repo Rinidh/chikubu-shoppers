@@ -32,6 +32,7 @@ h1 {
   display: flex;
   overflow: hidden;
   transition: all 200ms ease;
+  position: relative;
 }
 
 .product-card:hover {
@@ -45,6 +46,7 @@ h1 {
 }
 
 .product-card .info-sec .product-name {
+  margin-top: 42px;
   margin-bottom: 6px;
   padding-left: 15px;
   font-size: 27px;
@@ -88,4 +90,26 @@ h1 {
 
 .image-container:hover img {
   transform: scale(1.3);
+}
+
+.offer-tag {
+  position: absolute;
+  top: 5px;
+  left: -83px;
+  height: 40px;
+  width: 160px;
+  background-color: rgb(255, 238, 0);
+  color: black;
+  transform: rotate(-45deg);
+  transform-origin: top;
+  font-family: "fredoka";
+  font-size: 18px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.offer-tag span {
+  font-weight: 700;
+  font-size: large;
 }
