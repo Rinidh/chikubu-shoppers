@@ -1,0 +1,96 @@
+.cards-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.product-card {
+  background-color: rgb(240, 244, 252);
+  height: 300px;
+  border: 1px solid rgba(15, 58, 144, 0.48);
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  transition: all 200ms ease;
+  position: relative;
+}
+
+.product-card:hover {
+  box-shadow: 0px 3px 20px 4px rgb(208, 214, 214);
+}
+
+.product-card .info-sec {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card .info-sec .product-name {
+  margin-top: 42px;
+  margin-bottom: 6px;
+  padding-left: 15px;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.product-card .info-sec .product-price {
+  font-size: 19px;
+  padding-left: 15px;
+  margin: 10px 0px 20px;
+}
+
+.product-card .info-sec .add-to-cart-btn-container {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.product-card .image-sec {
+  margin-right: 15px;
+  overflow: hidden;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.image-sec .image-container {
+  overflow: hidden;
+  width: 100%;
+  height: 80%;
+  border-radius: 8px;
+}
+
+.image-sec .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 200ms ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.3);
+}
+
+.offer-tag {
+  position: absolute;
+  top: 5px;
+  left: -83px;
+  height: 40px;
+  width: 160px;
+  background-color: rgb(255, 238, 0);
+  color: black;
+  transform: rotate(-45deg);
+  transform-origin: top;
+  font-family: "fredoka";
+  font-size: 18px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.offer-tag span {
+  font-weight: 700;
+  font-size: large;
+}
