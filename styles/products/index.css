@@ -1,0 +1,67 @@
+html {
+  padding: 25px;
+  font-family: "poppins";
+}
+
+h1 {
+  font-family: "merriweather";
+}
+
+.heading-container {
+  /* for proper positioning of headings specific to this page */
+  margin-left: 0px;
+  margin-bottom: 30px;
+}
+
+.special-offers {
+  background-color: lightblue;
+  width: 100%;
+}
+
+.cards-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.product-card {
+  background-color: lightpink;
+  height: 300px;
+  border: 1px solid rgba(15, 58, 144, 0.48);
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+}
+
+.product-card .info-sec {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card .info-sec .product-name {
+  margin-bottom: 6px;
+  padding-left: 15px;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.product-card .info-sec .product-price {
+  font-size: 19px;
+  padding-left: 15px;
+  margin: 10px 0px 20px;
+}
+
+.product-card .info-sec .add-to-cart-btn-container {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.product-card .image-sec {
+  background-color: lightyellow;
+
+  width: 40%;
+}
