@@ -22,11 +22,47 @@
 
 .filter-container {
   display: flex;
+  align-items: center;
 }
 
-.dummy1 {
-  height: 40px;
-  width: 100px;
+.filter-dropdown {
+  display: inline-block;
+  position: relative;
   margin-left: 10px;
-  background-color: lightpink;
+}
+
+.filter-dropdown button {
+  font-size: 23px;
+  background-color: rgb(240, 244, 252);
+  color: rgb(15, 57, 144);
+}
+
+.filter-dropdown ul {
+  padding: 8px 5px;
+  background-color: rgb(240, 244, 252);
+  border-radius: 8px;
+  list-style: none; /* xx; */
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  transition: display 200ms ease;
+}
+
+.filter-dropdown:hover ul {
+  display: block;
+}
+
+.filter-dropdown li {
+  color: rgb(15, 57, 144);
+  border-radius: 8px;
+  margin: 7px 0px;
+  padding: 5px;
+  font-size: 23px;
+  font-weight: 700;
+  transition: all 200ms ease;
+}
+
+.filter-dropdown li:hover {
+  background-color: rgb(220, 229, 247);
 }
