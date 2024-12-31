@@ -7,6 +7,7 @@ rgb(240, 244, 252) - 100
 
 
 hover over pdt image to enlarge it
+how to make filter dropdown
 mailto in contact-info
 link "our specialty" in hero sec to about pg, specific section
 add hrefs at footer links

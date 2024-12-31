@@ -1,0 +1,32 @@
+.search-filter-container {
+  height: fit-content;
+  padding: 25px;
+  background-color: rgb(15, 57, 144);
+  color: white;
+}
+
+.all-products .heading-container {
+  margin: 20px 0px;
+}
+
+.all-products .heading-container h1,
+.all-products .heading-container i {
+  /* set explicitly due to specificty issues. In styles/index.css, .heading-container has colors set specifically */
+  color: white;
+}
+
+.search-filter-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-container {
+  display: flex;
+}
+
+.dummy1 {
+  height: 40px;
+  width: 100px;
+  margin-left: 10px;
+  background-color: lightpink;
+}
