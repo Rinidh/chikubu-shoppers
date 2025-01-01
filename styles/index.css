@@ -34,6 +34,20 @@ main {
   color: rgb(15, 57, 144);
 }
 
+/* global styles for all inputs */
+.brand-input {
+  min-width: 0px; /* for flex: --- to work well; */
+  flex: 3;
+  border: 4px solid rgb(15, 57, 144);
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.brand-input:focus {
+  border: 4px solid white;
+}
+
 /* global styles for ALL newsletter-box / email-input boxes */
 .newsletter label {
   display: block;
@@ -52,17 +66,9 @@ main {
 }
 
 #email-input-newsletter {
-  min-width: 0px; /* for flex: --- to work well; */
-  flex: 3;
-  border: 4px solid rgb(15, 57, 144);
+  border-radius: 0px; /* first reset border-radius; */
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  font-size: 20px;
-  padding: 10px;
-}
-
-#email-input-newsletter:focus {
-  border: 4px solid white;
 }
 
 #submit-button-newsletter {
