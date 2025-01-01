@@ -6,7 +6,7 @@ rgb(220, 229, 247) - 200
 rgb(240, 244, 252) - 100
 
 
-hover over pdt image to enlarge it
+inputs in contact-us-form
 mailto in contact-info
 link "our specialty" in hero sec to about pg, specific section
 add hrefs at footer links
@@ -18,6 +18,11 @@ JS TO ADD:
   -search products and display its card particularly on page
   -
   
+COMPONENTS (SNIPPETS) TO MAKE:
+  - magnifying glass and text as placeholder to <input>, which disappears on inputting text
+    - use background-image wiht url OR
+    - use icon <i> and position it rel to div. Add pseudo classes to hide it upon input
+
 ------------------------
 
 

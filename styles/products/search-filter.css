@@ -66,3 +66,30 @@
 .filter-dropdown li:hover {
   background-color: rgb(220, 229, 247);
 }
+
+.search-container {
+  position: relative;
+}
+
+.search-container .brand-input {
+  border-color: rgb(203, 218, 247);
+  margin-right: 10px;
+}
+
+.search-container .placeholder {
+  display: flex;
+  align-items: center;
+  color: rgba(15, 58, 144, 0.48);
+  position: absolute;
+  top: 19px;
+  left: 90px;
+  visibility: visible;
+}
+
+.search-container .brand-input:focus + .placeholder {
+  visibility: hidden; /* to hide icon when user wants to input; */
+}
+
+.search-container i {
+  margin-right: 10px;
+}
