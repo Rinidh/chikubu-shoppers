@@ -5,12 +5,12 @@
   color: white;
 }
 
-.all-products .heading-container {
+.all .heading-container {
   margin: 20px 0px;
 }
 
-.all-products .heading-container h1,
-.all-products .heading-container i {
+.all .heading-container h1,
+.all .heading-container i {
   /* set explicitly due to specificty issues. In styles/index.css, .heading-container has colors set specifically */
   color: white;
 }
@@ -83,6 +83,7 @@
   position: absolute;
   top: 100%;
   left: 30px;
+  z-index: 100;
 }
 
 .search-results .search-list-item {

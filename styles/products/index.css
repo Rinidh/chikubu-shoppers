@@ -19,3 +19,8 @@ h1 {
 .special-offers {
   margin: 100px 25px;
 }
+
+.all .all-products {
+  width: 100%;
+  padding: 200px 25px;
+}

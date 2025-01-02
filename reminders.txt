@@ -5,7 +5,7 @@ rgb(203, 218, 247) - 300
 rgb(220, 229, 247) - 200
 rgb(240, 244, 252) - 100
 
-shadow brand-list
+white bg veg pic
 mailto in contact-info
 link "our specialty" in hero sec to about pg, specific section
 add hrefs at footer links
