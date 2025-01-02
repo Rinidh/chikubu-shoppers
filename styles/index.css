@@ -133,3 +133,28 @@ main {
   display: flex;
   text-decoration: none;
 }
+
+/* global styles for all <ul>/<ol> lists */
+.brand-list {
+  margin: 0px;
+  padding: 8px 5px;
+  background-color: rgb(240, 244, 252);
+  border-radius: 8px;
+  list-style: none; /* xx; */
+  transition: display 200ms ease;
+  /* display: none; */
+}
+
+.brand-list li {
+  color: rgb(15, 57, 144);
+  border-radius: 8px;
+  margin: 7px 0px;
+  padding: 5px;
+  font-size: 19px;
+  font-weight: 700;
+  transition: all 200ms ease;
+}
+
+.brand-list li:hover {
+  background-color: rgb(220, 229, 247);
+}

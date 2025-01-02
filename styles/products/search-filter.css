@@ -37,43 +37,26 @@
   color: rgb(15, 57, 144);
 }
 
-.filter-dropdown ul {
-  padding: 8px 5px;
-  background-color: rgb(240, 244, 252);
-  border-radius: 8px;
-  list-style: none; /* xx; */
+.filter-dropdown .brand-list {
   display: none;
+}
+
+.filter-dropdown:hover .brand-list {
+  display: block;
   position: absolute;
   top: 100%;
   left: 0px;
-  transition: display 200ms ease;
-}
-
-.filter-dropdown:hover ul {
-  display: block;
-}
-
-.filter-dropdown li {
-  color: rgb(15, 57, 144);
-  border-radius: 8px;
-  margin: 7px 0px;
-  padding: 5px;
-  font-size: 23px;
-  font-weight: 700;
-  transition: all 200ms ease;
-}
-
-.filter-dropdown li:hover {
-  background-color: rgb(220, 229, 247);
 }
 
 .search-container {
+  margin-right: 40px;
   position: relative;
 }
 
 .search-container .brand-input {
   border-color: rgb(203, 218, 247);
   margin-right: 10px;
+  position: relative;
 }
 
 .search-container .placeholder {
@@ -92,4 +75,31 @@
 
 .search-container i {
   margin-right: 10px;
+}
+
+.search-container .search-results {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 30px;
+}
+
+.search-results .search-list-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+.search-results .search-list-name {
+  width: 150px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.search-list-item .search-list-name,
+.search-list-item .search-list-price {
+  display: inline-block;
 }
