@@ -5,18 +5,20 @@ rgb(203, 218, 247) - 300
 rgb(220, 229, 247) - 200
 rgb(240, 244, 252) - 100
 
-white bg veg pic
+add to cart btn heights
 mailto in contact-info
 link "our specialty" in hero sec to about pg, specific section
 add hrefs at footer links
 do home pg last
-change map theme to blue
 
 JS TO ADD:
   -filter products acc to dropdown, reload pdt cards with new headings eg for "by category": clothing, electronics... and for "by popularity": most loved & others
   -search products and display its card particularly on page
   -show class search-results only when input is focussed on
   -truncate excess long words and insert "..." in search-results list
+  -change map theme to blue
+  -click to expose pdt modal
+
   
 COMPONENTS (SNIPPETS) TO MAKE:
   - magnifying glass and text as placeholder to <input>, which disappears on inputting text

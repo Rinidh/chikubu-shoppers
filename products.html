@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="./styles/products/index.css" />
   <link rel="stylesheet" href="./styles/products/product-card-grid.css" />
   <link rel="stylesheet" href="./styles/products/search-filter.css" />
+  <link rel="stylesheet" href="./styles/products/product-modal.css" />
   <title>Products</title>
 </head>
 
@@ -219,6 +220,38 @@
           <div class='image-sec-2'>
             <div class='image-container-2'>
               <img src='./assets/vegetables1.png' />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The product modal is supposed to be dynamically rendered onto screen upon cliking the product-card; use javascript -->
+      <div class="heading-container">
+        <a href="#product-modal">
+          <i class="fas fa-link"></i>
+          <h1 id="product-modal">Product Modal Demo (on clicking Product Card)</h1>
+        </a>
+      </div>
+      <div class="product-modal">
+        <div class="modal-content">
+          <div class="modal-card">
+            <div class="info-sec">
+              <div class="text-container">
+                <p>Name</p>
+                <p>LG Fridge GL-36</p>
+              </div>
+              <div class="text-container">
+                <p>Price</p>
+                <p>UGX 6,000,000</p>
+              </div>
+              <div class="text-container">
+                <p>Name</p>
+                <p>All Garden Vegetables</p>
+              </div>
+
+            </div>
+            <div class="image-sec">
+              <img src="./assets/fridge1.jpg" alt="fridge">
             </div>
           </div>
         </div>

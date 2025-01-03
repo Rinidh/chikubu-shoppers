@@ -9,8 +9,8 @@
   margin: 20px 0px;
 }
 
-.all .heading-container h1,
-.all .heading-container i {
+.search-filter-container .heading-container h1,
+.search-filter-container .heading-container i {
   /* set explicitly due to specificty issues. In styles/index.css, .heading-container has colors set specifically */
   color: white;
 }
@@ -83,7 +83,7 @@
   position: absolute;
   top: 100%;
   left: 30px;
-  z-index: 100;
+  z-index: 10;
 }
 
 .search-results .search-list-item {
