@@ -25,6 +25,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .product-card .info-sec .product-name {
@@ -42,7 +43,7 @@
 }
 
 .product-card .info-sec .add-to-cart-btn-container {
-  margin-top: 40px;
+  margin-bottom: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -75,7 +76,7 @@
 }
 
 /* Design 2 */
-/* alternatively, this hover-styles also create good look */
+/* alternatively, these hover-styles also create a good look */
 .product-card-2 {
   background-color: rgb(240, 244, 252);
   height: 300px;
@@ -94,6 +95,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   overflow: hidden;
   position: relative; /* for offer tag in design 2; */
 }
@@ -113,7 +115,7 @@
 }
 
 .product-card-2 .info-sec .add-to-cart-btn-container {
-  margin-top: 40px;
+  margin-bottom: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -158,7 +160,7 @@
   color: black;
   transform: rotate(-45deg);
   transform-origin: top;
-  font-family: "fredoka";
+  font-family: 'fredoka';
   font-size: 18px;
   display: flex;
   align-items: end;

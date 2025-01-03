@@ -1,58 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Inter:opsz@14..32&family=Merriweather&family=Poppins:wght@200;300;400;700;900&family=Whisper&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/products/index.css" />
-    <link rel="stylesheet" href="./styles/products/product-card-grid.css" />
-    <link rel="stylesheet" href="./styles/products/search-filter.css" />
-    <title>Products</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Inter:opsz@14..32&family=Merriweather&family=Poppins:wght@200;300;400;700;900&family=Whisper&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-    <section class="special-offers">
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/header.css" />
+  <link rel="stylesheet" href="./styles/footer.css" />
+  <link rel="stylesheet" href="./styles/products/index.css" />
+  <link rel="stylesheet" href="./styles/products/product-card-grid.css" />
+  <link rel="stylesheet" href="./styles/products/search-filter.css" />
+  <title>Products</title>
+</head>
+
+<body>
+  <section class="special-offers">
+    <div class="heading-container">
+      <a href="#special-offers">
+        <i class="fas fa-link"></i>
+        <h1 id="special-offers">Special Offers</h1>
+      </a>
+    </div>
+
+    <div class="cards-grid">
+      <div class="product-card">
+        <div class="info-sec">
+          <p class="product-name">Sony HTS-20R Sound System</p>
+          <p class="product-price">UGX 1,200,000</p>
+          <div class="add-to-cart-btn-container">
+            <button class="brand-button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="image-sec">
+          <div class="image-container">
+            <img src="./assets/sound-system1.jpeg" alt="sound-system" />
+          </div>
+        </div>
+        <div class="offer-tag"><span>-</span>14%</div>
+      </div>
+
+      <div class="product-card-2">
+        <div class="info-sec">
+          <p class="product-name">Nike &#8482 Sweatpants</p>
+          <p class="product-price">UGX 10,000</p>
+          <div class="add-to-cart-btn-container">
+            <button class="brand-button">Add to Cart</button>
+          </div>
+          <div class="offer-tag"><span>-</span>20%</div>
+        </div>
+        <div class="image-sec-2">
+          <div class="image-container-2">
+            <img src="./assets/pants1.png" alt="sweatpants" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="all">
+    <section class="search-filter-container">
       <div class="heading-container">
         <a href="#special-offers">
           <i class="fas fa-link"></i>
-          <h1 id="special-offers">Special Offers</h1>
+          <h1 id="special-offers">All</h1>
         </a>
       </div>
 
-      <div class="cards-grid">
-        <div class="product-card">
-          <div class="info-sec">
-            <p class="product-name">Sony HTS-20R Sound System</p>
-            <p class="product-price">UGX 1,200,000</p>
-            <div class="add-to-cart-btn-container">
-              <button class="brand-button">Add to Cart</button>
-            </div>
+      <div class="search-filter-box">
+        <div class="filter-container">
+          Filter by
+          <div class="filter-dropdown">
+            <button class="brand-button">Category</button>
+            <ul class="brand-list">
+              <li id="by-category">Category</li>
+              <li id="by-price">Price</li>
+              <li id="by-popularity">Popularity</li>
+            </ul>
           </div>
-          <div class="image-sec">
-            <div class="image-container">
-              <img src="./assets/sound-system1.jpeg" alt="sound-system" />
-            </div>
-          </div>
-          <div class="offer-tag"><span>-</span>14%</div>
         </div>
 
+        <div class="search-container">
+          Search
+          <input type="text" class="brand-input" />
+          <div class="placeholder"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+          <div class="search-results">
+            <ul class="brand-list">
+              <li>
+                <div id="sound-system" class="search-list-item">
+                  <div class="search-list-name">Sony HTS-20R Sound System</div>
+                  <div class="search-list-price">1,200,000</div>
+                </div>
+              </li>
+              <li>
+                <div id="sweatpants" class="search-list-item">
+                  <div class="search-list-name">Nike &#8482 Sweatpants</div>
+                  <div class="search-list-price">10,000</div>
+                </div>
+              </li>
+              <li>
+                <div id="flour" class="search-list-item">
+                  <div class="search-list-name">Nilakathir flour 1kg</div>
+                  <div class="search-list-price">11,500</div>
+                </div>
+              </li>
+              <li>
+                <div id="fridge" class="search-list-item">
+                  <div class="search-list-name">LG Fridge GL-36</div>
+                  <div class="search-list-price">6,000,000</div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="all-products">
+      <div class="cards-grid">
         <div class="product-card-2">
           <div class="info-sec">
             <p class="product-name">Nike &#8482 Sweatpants</p>
@@ -68,164 +144,87 @@
             </div>
           </div>
         </div>
+
+        <div class='product-card-2'>
+          <div class='info-sec'>
+            <p class='product-name'>Sony HTS-20R Sound System</p>
+            <p class='product-price'>UGX 1,200,000</p>
+            <div class='add-to-cart-btn-container'>
+              <button class='brand-button'>Add to Cart</button>
+            </div>
+            <div class='offer-tag'><span>-</span>14%</div>
+          </div>
+          <div class='image-sec-2'>
+            <div class='image-container-2'>
+              <img src='./assets/sound-system1.jpeg' />
+            </div>
+          </div>
+        </div>
+
+        <div class='product-card-2'>
+          <div class='info-sec'>
+            <div class="text-container">
+              <p class='product-name'>Nilakathir flour 1kg</p>
+              <p class='product-price'>UGX 11,500</p>
+            </div>
+            <div class='add-to-cart-btn-container'>
+              <button class='brand-button'>Add to Cart</button>
+            </div>
+          </div>
+          <div class='image-sec-2'>
+            <div class='image-container-2'>
+              <img src='./assets/flour1.webp' />
+            </div>
+          </div>
+        </div>
+
+        <div class='product-card-2'>
+          <div class='info-sec'>
+            <p class='product-name'>LG Fridge GL-36</p>
+            <p class='product-price'>UGX 6,000,000</p>
+            <div class='add-to-cart-btn-container'>
+              <button class='brand-button'>Add to Cart</button>
+            </div>
+          </div>
+          <div class='image-sec-2'>
+            <div class='image-container-2'>
+              <img src='./assets/fridge1.jpg' />
+            </div>
+          </div>
+        </div>
+
+        <div class='product-card-2'>
+          <div class='info-sec'>
+            <p class='product-name'>Jordan T-shirts</p>
+            <p class='product-price'>UGX 9,000</p>
+            <div class='add-to-cart-btn-container'>
+              <button class='brand-button'>Add to Cart</button>
+            </div>
+          </div>
+          <div class='image-sec-2'>
+            <div class='image-container-2'>
+              <img src='./assets/t-shirt1.jpg' />
+            </div>
+          </div>
+        </div>
+
+        <div class='product-card-2'>
+          <div class='info-sec'>
+            <p class='product-name'>All Garden Vegetables</p>
+            <p class='product-price'>UGX 10,500</p>
+            <div class='add-to-cart-btn-container'>
+              <button class='brand-button'>Add to Cart</button>
+            </div>
+          </div>
+          <div class='image-sec-2'>
+            <div class='image-container-2'>
+              <img src='./assets/vegetables1.png' />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+  </section>
+</body>
 
-    <section class="all">
-      <section class="search-filter-container">
-        <div class="heading-container">
-          <a href="#special-offers">
-            <i class="fas fa-link"></i>
-            <h1 id="special-offers">All</h1>
-          </a>
-        </div>
-
-        <div class="search-filter-box">
-          <div class="filter-container">
-            Filter by
-            <div class="filter-dropdown">
-              <button class="brand-button">Category</button>
-              <ul class="brand-list">
-                <li id="by-category">Category</li>
-                <li id="by-price">Price</li>
-                <li id="by-popularity">Popularity</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="search-container">
-            Search
-            <input type="text" class="brand-input" />
-            <div class="placeholder"><i class="fa-solid fa-magnifying-glass"></i></div>
-
-            <div class="search-results">
-              <ul class="brand-list">
-                <li>
-                  <div id="sound-system" class="search-list-item">
-                    <div class="search-list-name">Sony HTS-20R Sound System</div>
-                    <div class="search-list-price">1,200,000</div>
-                  </div>
-                </li>
-                <li>
-                  <div id="sweatpants" class="search-list-item">
-                    <div class="search-list-name">Nike &#8482 Sweatpants</div>
-                    <div class="search-list-price">10,000</div>
-                  </div>
-                </li>
-                <li>
-                  <div id="flour" class="search-list-item">
-                    <div class="search-list-name">Nilakathir flour 1kg</div>
-                    <div class="search-list-price">11,500</div>
-                  </div>
-                </li>
-                <li>
-                  <div id="fridge" class="search-list-item">
-                    <div class="search-list-name">LG Fridge GL-36</div>
-                    <div class="search-list-price">6,000,000</div>
-                  </div>
-                </li>
-                
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="all-products">
-        <div class="cards-grid">
-          <div class="product-card-2">
-            <div class="info-sec">
-              <p class="product-name">Nike &#8482 Sweatpants</p>
-              <p class="product-price">UGX 10,000</p>
-              <div class="add-to-cart-btn-container">
-                <button class="brand-button">Add to Cart</button>
-              </div>
-              <div class="offer-tag"><span>-</span>20%</div>
-            </div>
-            <div class="image-sec-2">
-              <div class="image-container-2">
-                <img src="./assets/pants1.png" alt="sweatpants" />
-              </div>
-            </div>
-          </div>
-
-          <div class='product-card-2'>
-          <div class='info-sec'>
-          <p class='product-name'>Sony HTS-20R Sound System</p>
-          <p class='product-price'>UGX 1,200,000</p>
-          <div class='add-to-cart-btn-container'>
-          <button class='brand-button'>Add to Cart</button>
-          </div>
-          <div class='offer-tag'><span>-</span>14%</div>
-          </div>
-          <div class='image-sec-2'>
-          <div class='image-container-2'>
-          <img src='./assets/sound-system1.jpeg' />
-          </div>
-          </div>
-          </div>
-
-          <div class='product-card-2'>
-          <div class='info-sec'>
-          <p class='product-name'>Nilakathir flour 1kg</p>
-          <p class='product-price'>UGX 11,500</p>
-          <div class='add-to-cart-btn-container'>
-          <button class='brand-button'>Add to Cart</button>
-          </div>
-          </div>
-          <div class='image-sec-2'>
-          <div class='image-container-2'>
-          <img src='./assets/flour1.webp' />
-          </div>
-          </div>
-          </div>
-
-          <div class='product-card-2'>
-          <div class='info-sec'>
-          <p class='product-name'>LG Fridge GL-36</p>
-          <p class='product-price'>UGX 6,000,000</p>
-          <div class='add-to-cart-btn-container'>
-          <button class='brand-button'>Add to Cart</button>
-          </div>
-          </div>
-          <div class='image-sec-2'>
-          <div class='image-container-2'>
-          <img src='./assets/fridge1.jpg' />
-          </div>
-          </div>
-          </div>
-
-          <div class='product-card-2'>
-          <div class='info-sec'>
-          <p class='product-name'>Jordan T-shirts</p>
-          <p class='product-price'>UGX 9,000</p>
-          <div class='add-to-cart-btn-container'>
-          <button class='brand-button'>Add to Cart</button>
-          </div>
-          </div>
-          <div class='image-sec-2'>
-          <div class='image-container-2'>
-          <img src='./assets/t-shirt1.jpg' />
-          </div>
-          </div>
-          </div>
-
-          <div class='product-card-2'>
-          <div class='info-sec'>
-          <p class='product-name'>All Garden Vegetables</p>
-          <p class='product-price'>UGX 10,500</p>
-          <div class='add-to-cart-btn-container'>
-          <button class='brand-button'>Add to Cart</button>
-          </div>
-          </div>
-          <div class='image-sec-2'>
-          <div class='image-container-2'>
-          <img src='./assets/vegetables1.webp' />
-          </div>
-          </div>
-          </div>
-        </div>
-      </section>
-    </section>
-  </body>
 </html>
