@@ -12,7 +12,6 @@
 .modal-content {
   height: 100%;
   width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +19,7 @@
 
 .modal-card {
   background-color: white;
-  height: 600px;
+  height: 90vh;
   width: 900px;
   border-radius: 10px;
   display: flex;
@@ -45,4 +44,92 @@
 .modal-card .info-sec {
   flex: 3;
   border-right: 2px solid rgb(203, 218, 247);
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-card .text-container {
+  margin: 5px 0px;
+  padding: 5px 0px;
+}
+
+.modal-card .text-container p {
+  margin: 0px;
+}
+
+.modal-card .text-container p:first-child {
+  font-size: 15px;
+}
+
+.modal-card .product-description {
+  max-height: 270px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.modal-card #product-name {
+  font: 700 normal 40px 'poppins';
+}
+
+.modal-card .buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.modal-card .add-to-cart-container {
+  display: flex;
+}
+
+.modal-card .qty-input-container {
+  margin-right: 5px;
+}
+
+.modal-card .add-to-cart-container input {
+  display: inline-block;
+  height: 43px;
+  max-width: 75px;
+}
+
+.modal-card .add-to-cart-container label {
+  font-size: 15px;
+  display: block;
+}
+
+.modal-card .share-product-container {
+  display: flex;
+}
+
+.modal-card .share-product-container button {
+  margin: 3px;
+  padding: 6px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 16px;
+  transition: all 200ms ease;
+}
+
+.modal-card .share-product-container button:hover {
+  background-color: rgb(241, 239, 239);
+}
+
+.modal-card .share-product-container i {
+  margin-right: 2px;
+}
+
+.modal-card .share-product-container #facebook {
+  color: blue;
+}
+
+.modal-card .share-product-container #instagram {
+  color: rgb(255, 0, 140);
+}
+
+.modal-card .share-product-container #pinterest {
+  color: red;
 }
