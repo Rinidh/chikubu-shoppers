@@ -102,19 +102,23 @@
   display: flex;
 }
 
-.modal-card .share-product-container button {
+.modal-card .share-product-container a {
   margin: 3px;
   padding: 6px;
   display: flex;
+  align-items: center;
   border: 1px solid black;
   border-radius: 3px;
   box-sizing: border-box;
   background-color: white;
+  text-decoration: none;
   font-size: 16px;
+  font-weight: 700;
   transition: all 200ms ease;
+  cursor: pointer;
 }
 
-.modal-card .share-product-container button:hover {
+.modal-card .share-product-container a:hover {
   background-color: rgb(241, 239, 239);
 }
 

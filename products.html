@@ -7,12 +7,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Inter:opsz@14..32&family=Merriweather&family=Poppins:wght@200;300;400;700;900&family=Whisper&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Inter:opsz@14..32&family=Merriweather&family=Poppins:wght@200;300;400;700;900&family=Whisper&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="./styles/index.css" />
   <link rel="stylesheet" href="./styles/header.css" />
@@ -264,25 +262,27 @@
                 <div class="add-to-cart-container">
                   <div class="qty-input-container">
                     <label for="quantity-to-order">Quantity</label>
-                    <input id='quantity-to-order' type="number" class="quantity-counter brand-input">
+                    <input id='quantity-to-order' type="number" class="quantity-counter brand-input" min='1' max='100'>
                   </div>
                   <button class="brand-button">
                     Add to Cart
                   </button>
                 </div>
                 <div class="share-product-container">
-                  <button id='facebook'>
+                  <a id='facebook' href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/products.html" target='_blank'>
                     <i class="fa-brands fa-square-facebook"></i>
                     SHARE
-                  </button>
-                  <button id='instagram'>
+                  </a>
+                  <a id='instagram' href="https://instagram.com/" target='_blank'>
                     <i class="fa-brands fa-square-instagram"></i>
                     POST
-                  </button>
-                  <button id='pinterest'>
+                  </a>
+                  <a id='pinterest'
+                    href="https://pinterest.com/pin/create/button/?url=http://127.0.0.1:5500/products.html&media=http://127.0.0.1:5500/assets/fridge1.jpg&description=Check%20out%20this%20awesome%20fridge%20at%20Chikubu!"
+                    target='_blank'>
                     <i class="fa-brands fa-square-pinterest"></i>
                     PIN IT
-                  </button>
+                  </a>
                 </div>
               </div>
 
