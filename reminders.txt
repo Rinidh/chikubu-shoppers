@@ -5,11 +5,10 @@ rgb(203, 218, 247) - 300
 rgb(220, 229, 247) - 200
 rgb(240, 244, 252) - 100
 
- pinterecomplete for insta & pinterest
-mailto in contact-info
+do home pg last
 link "our specialty" in hero sec to about pg, specific section
 add hrefs at footer links
-do home pg last
+mailto in contact-info
 update direct pdt sharing links in pdt modal after deploying app. Check thoroughly @ (each) link
 
 JS TO ADD:
