@@ -150,24 +150,35 @@
 }
 
 /* Special Offer tag on top left */
-.offer-tag {
+.card-tag {
   position: absolute;
   top: 5px;
   left: -83px;
   height: 40px;
   width: 160px;
-  background-color: rgb(255, 238, 0);
-  color: black;
   transform: rotate(-45deg);
   transform-origin: top;
   font-family: 'fredoka';
-  font-size: 18px;
   display: flex;
   align-items: end;
   justify-content: center;
 }
 
+.offer-tag {
+  background-color: rgb(255, 238, 0);
+  color: black;
+  font-size: 18px;
+}
+
 .offer-tag span {
   font-weight: 700;
   font-size: large;
+}
+
+.sold-out-tag {
+  background-color: rgb(232, 0, 0);
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
 }
