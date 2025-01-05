@@ -5,6 +5,7 @@ rgb(203, 218, 247) - 300
 rgb(220, 229, 247) - 200
 rgb(240, 244, 252) - 100
 
+cart pg
 do home pg last
 link "our specialty" in hero sec to about pg, specific section
 add hrefs at footer links
@@ -19,6 +20,9 @@ JS TO ADD:
   -change map theme to blue
   -click to expose pdt modal
   -make the direct share-to-social-media btns work in pdt-modal
+  -show in cart page "No products in cart yet"
+  -update the qty selected in summary in cart page when user changes qty from bar below card
+
 
   
 COMPONENTS (SNIPPETS) TO MAKE:
