@@ -108,3 +108,56 @@
 .summary #total-row #tax-info {
   font-size: 13px;
 }
+
+section.checkout {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: end;
+}
+
+.checkout .brand-button {
+  position: relative;
+  margin: 0px 60px;
+  width: 200px;
+  text-align: center;
+}
+
+.checkout-buttons {
+  position: absolute;
+  top: 110%;
+  left: 0px;
+  visibility: hidden;
+  transition: visibility 200ms ease;
+}
+
+.checkout .brand-button:hover .checkout-buttons {
+  visibility: visible;
+}
+
+.checkout-buttons button {
+  margin: 6px 0px;
+  padding: 10px;
+  height: 60px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.checkout-buttons button:hover {
+  opacity: 0.7;
+}
+
+.checkout-buttons img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.checkout-buttons .paypal-btn {
+  background-color: rgb(254, 238, 0);
+  border: 3px solid rgb(254, 238, 0);
+}
+
+.checkout-buttons .shop-pay-btn {
+  background-color: rgb(246, 243, 243);
+  border: 3px solid rgb(35, 1, 126);
+}
