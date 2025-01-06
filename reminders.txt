@@ -5,7 +5,7 @@ rgb(203, 218, 247) - 300
 rgb(220, 229, 247) - 200
 rgb(240, 244, 252) - 100
 
-cart pg
+summ table design
 do home pg last
 link "our specialty" in hero sec to about pg, specific section
 add hrefs at footer links

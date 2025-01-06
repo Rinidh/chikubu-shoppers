@@ -4,8 +4,7 @@
   display: flex;
 }
 
-.cards-grid {
-  background-color: lightpink;
+.my-cart-content .cards-grid {
   flex: 3;
   grid-template-columns: 1fr 1fr;
   row-gap: 40px;
@@ -56,7 +55,56 @@
 }
 
 .summary {
-  background-color: lightblue;
-
   flex: 2;
+  padding: 0px 10px;
+}
+
+.summary table {
+  margin-left: auto;
+  background-color: rgb(240, 244, 252);
+  border-radius: 10px;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+
+.summary thead,
+.summary #total-row {
+  background-color: rgb(15, 57, 144);
+  color: white;
+}
+
+.summary th {
+  padding: 5px 0px;
+}
+
+.summary tr {
+  text-align: center;
+  word-wrap: normal;
+  height: 50px;
+}
+
+.summary tr:nth-child(even) {
+  background-color: rgb(220, 229, 247);
+}
+
+.summary td {
+  /* border: 2px solid red; */
+  border-right: 2px solid rgb(203, 218, 247);
+  padding: 0px; /* remove default 1px padding; */
+}
+
+.summary #total-row {
+  border-top: 10px double white;
+}
+
+.summary #total-row td:first-child {
+  padding: 6px;
+  text-align: end;
+  font-weight: 700;
+  font-size: 20px;
+  border-right: 0px;
+}
+
+.summary #total-row #tax-info {
+  font-size: 13px;
 }
