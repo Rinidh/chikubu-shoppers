@@ -1,0 +1,72 @@
+.products-section {
+  background-color: rgb(15, 57, 144);
+  color: white;
+  padding: 50px 25px;
+}
+
+.products-section h1 {
+  font: 500 normal 40px 'fredoka';
+}
+
+.category-cards-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-card {
+  position: relative;
+  height: 500px;
+  width: 350px;
+  margin: 0px 40px 40px 40px;
+  border: 1px solid rgb(203, 218, 247);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+/* .category-card .card-hover-area {
+  height: 350px;
+
+} */
+
+.category-card:hover {
+  transform: translate(0px, -10px);
+  box-shadow: 0px 10px 30px 3px rgb(0, 31, 93);
+}
+
+.category-card .image {
+  height: 50%;
+  width: 100%;
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-card h3 {
+  font-size: 28px;
+  margin: 20px 10px;
+}
+
+.category-card p {
+  font-size: 14px;
+  margin: 0px 10px;
+}
+
+.category-card i {
+  position: absolute;
+  top: 270px;
+  right: 80px;
+  font-size: 35px;
+  transition: all 300ms ease;
+}
+
+.category-card:hover i {
+  transform: scale(1.1) translate(10px, -10px);
+}
