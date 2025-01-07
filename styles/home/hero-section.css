@@ -1,43 +1,43 @@
 .hero-section {
-  height: 400px;
-  /* width: 100%; rather not set width to prevent overflow */
-  margin: 100px;
-  padding: 20px 50px;
-  background-image: linear-gradient(to right, rgb(203, 218, 247), white);
-  border-radius: 8px;
+  height: 80vh;
+  margin: 0px 10px 200px 10px;
   display: flex;
+  border: 4px solid rgb(15, 57, 144);
+  border-radius: 15px;
 }
 
 .right-hero-sec {
-  width: 400px;
+  flex: 2;
 }
 
 .right-hero-sec img {
   height: 100%;
-  border-radius: 8px;
-  object-fit: contain;
+  width: 100%;
 }
 
 .left-hero-sec {
   flex: 3;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .left-hero-sec h1 {
-  font-size: 60px;
-  margin-bottom: 10px;
+  font: 900 normal 80px 'fredoka';
+  margin-bottom: 20px;
+}
+
+.left-hero-sec h1 span {
+  text-decoration: overline;
 }
 
 .left-hero-sec h5 {
-  font-family: "Merriweather";
   font-weight: 400;
-  font-size: 20px;
-  margin-top: 0px;
+  font-size: 23px;
 }
 
-.left-hero-sec button {
-  margin-top: 20px;
-}
-
-#title-hero-sec {
-  text-decoration: overline;
+.left-hero-sec .brand-button {
+  margin-bottom: 40px;
+  width: 400px;
 }
