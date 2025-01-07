@@ -5,6 +5,7 @@ header {
   display: flex;
   flex-direction: row;
   position: fixed;
+  z-index: 90;
 }
 
 nav {
@@ -21,7 +22,7 @@ nav div {
 }
 
 nav .products {
-  height: 70px;  /*to easily hover into productsNav to show dropdown */
+  height: 70px; /*to easily hover into productsNav to show dropdown */
   display: flex;
   align-items: center;
   position: relative;
@@ -60,8 +61,7 @@ nav .products {
 }
 
 .products svg {
-  transition: transform 300ms ease
-
+  transition: transform 300ms ease;
 }
 
 .products:hover svg {
