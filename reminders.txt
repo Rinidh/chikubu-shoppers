@@ -4,6 +4,9 @@ rgba(15, 58, 144, 0.48) - 800
 rgb(203, 218, 247) - 300
 rgb(220, 229, 247) - 200
 rgb(240, 244, 252) - 100
+At 100 zoom:
+  width: 738px
+  height: 1513px
 
 save category card snipp
 do home pg
