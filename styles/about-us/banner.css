@@ -11,7 +11,7 @@
   left: 0px;
   height: 100%;
   width: 100%;
-  z-index: 90;
+  z-index: 80;
   display: flex;
 }
 
@@ -44,7 +44,7 @@
   left: 0px;
   height: 100%;
   width: 100%;
-  z-index: 99;
+  z-index: 80;
   display: flex;
 }
 

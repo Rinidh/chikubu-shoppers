@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./styles/index.css" />
   <link rel="stylesheet" href="./styles/header.css" />
   <link rel="stylesheet" href="./styles/footer.css" />
+  <link rel="stylesheet" href="./styles/top-fold.css" />
   <link rel="stylesheet" href="./styles/products/product-card-grid.css" />
   <!-- load my-cart/index.css after product-card-grid.css for overwrites -->
   <link rel="stylesheet" href="./styles/my-cart/index.css" />
@@ -22,146 +23,194 @@
 </head>
 
 <body>
-  <div class="heading-container">
-    <a href="#my-cart">
-      <i class="fas fa-link"></i>
-      <h1 id="my-cart">My Cart</h1>
-    </a>
+  <div class='top-fold'>
+    <span>Special Offers</span> &nbsp; on Christmas Holidays!
+    <i class="close-button fa-solid fa-xmark"></i>
   </div>
-
-  <section class="my-cart-content">
-    <section class="cards-grid">
-      <div class="card-changes-container">
-        <div class="product-card-2">
-          <div class="info-sec">
-            <p class="product-name">Nike &#8482 Sweatpants</p>
-            <p class="product-price">UGX 10,000</p>
-            <div class="add-to-cart-btn-container">
-              <button class="brand-button">Add to Cart</button>
-            </div>
-            <div class="card-tag offer-tag"><span>-</span>20%</div>
+  <header>
+    <img style="height: 100%" src="./assets/logo.png" alt="logo" />
+    <div class="nav-container">
+      <nav>
+        <div class="home">Home</div>
+        <div class="products">
+          Products
+          <svg xmlns="http://www.w3.org/2000/svg" height="40px" width="40px" viewBox="0 -960 960 960" fill="#0f3990">
+            <path d="M480-360 280-559h400L480-360Z" />
+          </svg>
+          <div class="dropdown">
+            <div class="groceries">Groceries</div>
+            <div class="electronics">Electronics</div>
+            <div class="clothing">Clothing</div>
           </div>
-          <div class="image-sec-2">
-            <div class="image-container-2">
-              <img src="./assets/pants1.png" alt="sweatpants" />
-            </div>
-          </div>
-
         </div>
-        <div class="changes-sec">
-          <div class="change-qty">
-            <label for="qty-input">Quantity</label>
-            <input type="number" class="brand-input" min='1' max='50'>
+        <div class="about-us">About Us</div>
+        <div class="cart">Cart</div>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="heading-container">
+      <a href="#my-cart">
+        <i class="fas fa-link"></i>
+        <h1 id="my-cart">My Cart</h1>
+      </a>
+    </div>
+    <section class="my-cart-content">
+      <section class="cards-grid">
+        <div class="card-changes-container">
+          <div class="product-card-2">
+            <div class="info-sec">
+              <p class="product-name">Nike &#8482 Sweatpants</p>
+              <p class="product-price">UGX 10,000</p>
+              <div class="add-to-cart-btn-container">
+                <button class="brand-button">Add to Cart</button>
+              </div>
+              <div class="card-tag offer-tag"><span>-</span>20%</div>
+            </div>
+            <div class="image-sec-2">
+              <div class="image-container-2">
+                <img src="./assets/pants1.png" alt="sweatpants" />
+              </div>
+            </div>
           </div>
-          <button class="remove-from-cart-btn brand-button">
-            <i class="fa-solid fa-circle-minus"></i>
-            REMOVE
+          <div class="changes-sec">
+            <div class="change-qty">
+              <label for="qty-input">Quantity</label>
+              <input type="number" class="brand-input" min='1' max='50'>
+            </div>
+            <button class="remove-from-cart-btn brand-button">
+              <i class="fa-solid fa-circle-minus"></i>
+              REMOVE
+            </button>
+          </div>
+        </div>
+        <div class="card-changes-container">
+          <div class="product-card-2">
+            <div class="info-sec">
+              <p class="product-name">LG Fridge GL-36</p>
+              <p class="product-price">UGX 6,000,000</p>
+              <div class="add-to-cart-btn-container">
+                <button class="brand-button">Add to Cart</button>
+              </div>
+            </div>
+            <div class="image-sec-2">
+              <div class="image-container-2">
+                <img src="./assets/fridge1.jpg" alt="fridge" />
+              </div>
+            </div>
+          </div>
+          <div class="changes-sec">
+            <div class="change-qty">
+              <label for="qty-input">Quantity</label>
+              <input type="number" class="brand-input" min='1' max='50'>
+            </div>
+            <button class="remove-from-cart-btn brand-button">
+              <i class="fa-solid fa-circle-minus"></i>
+              REMOVE
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="summary">
+        <table>
+          <thead>
+            <th>
+              Name
+            </th>
+            <th>
+              Unit Price (UGX)
+            </th>
+            <th>
+              Quantity
+            </th>
+            <th>
+              Amount (UGX)
+            </th>
+          </thead>
+          <tr>
+            <td>Nike &#8482 Sweatpants</td>
+            <td>10,000</td>
+            <td>4</td>
+            <td>40,000</td>
+          </tr>
+          <tr>
+            <td>LG Fridge GL-36</td>
+            <td>6,000,000</td>
+            <td>2</td>
+            <td>12,000,000</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr id='total-row'>
+            <td colspan='3'>
+              <div>TOTAL (UGX)</div>
+              <span id='tax-info'>(Exclusive of all taxes. 18% VAT charged upon checkout)</span>
+            </td>
+            <td>12,040,000</td>
+          </tr>
+        </table>
+      </section>
+    </section>
+    <section class="checkout">
+      <div class="brand-button">
+        <div class="label">Checkout</div>
+        <div class="checkout-buttons">
+          <button class="paypal-btn">
+            <img src="./assets/paypal-logo-horizontal.png" alt="Pay via paypal">
+          </button>
+          <button class="shop-pay-btn">
+            <img src="./assets/shop-pay-logo.png" alt="Pay via shop pay">
           </button>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="card-changes-container">
-        <div class="product-card-2">
-          <div class="info-sec">
-            <p class="product-name">LG Fridge GL-36</p>
-            <p class="product-price">UGX 6,000,000</p>
-            <div class="add-to-cart-btn-container">
-              <button class="brand-button">Add to Cart</button>
-            </div>
-          </div>
-          <div class="image-sec-2">
-            <div class="image-container-2">
-              <img src="./assets/fridge1.jpg" alt="fridge" />
-            </div>
-          </div>
-        </div>
-        <div class="changes-sec">
-          <div class="change-qty">
-            <label for="qty-input">Quantity</label>
-            <input type="number" class="brand-input" min='1' max='50'>
-          </div>
-          <button class="remove-from-cart-btn brand-button">
-            <i class="fa-solid fa-circle-minus"></i>
-            REMOVE
-          </button>
-
-        </div>
+  <footer>
+    <div class="page-links-footer">
+      <a>Products</a>
+      <a>Terms of service</a>
+      <a>About Us</a>
+      <a>Contact Us</a>
+    </div>
+    <div class="social-media-footer">
+      <div class="icons">
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-facebook"></i>
       </div>
-    </section>
-
-    <section class="summary">
-      <table>
-        <thead>
-          <th>
-            Name
-          </th>
-          <th>
-            Unit Price (UGX)
-          </th>
-          <th>
-            Quantity
-          </th>
-          <th>
-            Amount (UGX)
-          </th>
-        </thead>
-
-        <tr>
-          <td>Nike &#8482 Sweatpants</td>
-          <td>10,000</td>
-          <td>4</td>
-          <td>40,000</td>
-        </tr>
-        <tr>
-          <td>LG Fridge GL-36</td>
-          <td>6,000,000</td>
-          <td>2</td>
-          <td>12,000,000</td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&nbsp;</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr id='total-row'>
-          <td colspan='3'>
-            <div>TOTAL (UGX)</div>
-            <span id='tax-info'>(Exclusive of all taxes. 18% VAT charged upon checkout)</span>
-          </td>
-          <td>12,040,000</td>
-        </tr>
-      </table>
-    </section>
-  </section>
-
-  <section class="checkout">
-    <div class="brand-button">
-      <div class="label">Checkout</div>
-
-      <div class="checkout-buttons">
-        <button class="paypal-btn">
-          <img src="./assets/paypal-logo-horizontal.png" alt="Pay via paypal">
-        </button>
-        <button class="shop-pay-btn">
-          <img src="./assets/shop-pay-logo.png" alt="Pay via shop pay">
-        </button>
+      <div class="copyright">&copy 2024 | Chikubu Shoppers Ltd</div>
+    </div>
+    <div class="newsletter-footer">
+      <div class="newsletter">
+        <label for="email-input-newsletter"><span id="heading-newsletter">Join our Mailing List.</span>Receive trending updates from our store</label>
+        <div class="input-and-button">
+          <input id="email-input-newsletter" class="brand-input" type="text" />
+          <button id="submit-button-newsletter" class="brand-button">
+            JOIN
+          </button>
+        </div>
       </div>
     </div>
+  </footer>
 
-  </section>
 
 </body>
 

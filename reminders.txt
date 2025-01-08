@@ -9,7 +9,6 @@ At 100 zoom:
   height: 1513px
 
 
-above header bar christmas offer
 put header footer in all
 learn routing in html
   link "our specialty" in hero sec to about pg, specific section
@@ -28,7 +27,7 @@ JS TO ADD:
   -make the direct share-to-social-media btns work in pdt-modal
   -show in cart page "No products in cart yet"
   -update the qty selected in summary in cart page when user changes qty from bar below card
-
+  -top-fold close button
 
   
 COMPONENTS (SNIPPETS) TO MAKE:
@@ -39,6 +38,7 @@ COMPONENTS (SNIPPETS) TO MAKE:
   - <button> with border-width of 1px and on hover, border-width of 2px without causing nearby divs to move (box-sizing: border-box doesn't work)
 
 ------------------------
+
 
 
 

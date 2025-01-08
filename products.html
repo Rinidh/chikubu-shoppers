@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./styles/index.css" />
   <link rel="stylesheet" href="./styles/header.css" />
   <link rel="stylesheet" href="./styles/footer.css" />
+  <link rel="stylesheet" href="./styles/top-fold.css" />
   <link rel="stylesheet" href="./styles/products/index.css" />
   <link rel="stylesheet" href="./styles/products/product-card-grid.css" />
   <link rel="stylesheet" href="./styles/products/search-filter.css" />
@@ -23,111 +24,56 @@
 </head>
 
 <body>
-  <section class="special-offers">
-    <div class="heading-container">
-      <a href="#special-offers">
-        <i class="fas fa-link"></i>
-        <h1 id="special-offers">Special Offers</h1>
-      </a>
+  <div class='top-fold'>
+    <span>Special Offers</span> &nbsp; on Christmas Holidays!
+    <i class="close-button fa-solid fa-xmark"></i>
+  </div>
+  <header>
+    <img style="height: 100%" src="./assets/logo.png" alt="logo" />
+    <div class="nav-container">
+      <nav>
+        <div class="home">Home</div>
+        <div class="products">
+          Products
+          <svg xmlns="http://www.w3.org/2000/svg" height="40px" width="40px" viewBox="0 -960 960 960" fill="#0f3990">
+            <path d="M480-360 280-559h400L480-360Z" />
+          </svg>
+          <div class="dropdown">
+            <div class="groceries">Groceries</div>
+            <div class="electronics">Electronics</div>
+            <div class="clothing">Clothing</div>
+          </div>
+        </div>
+        <div class="about-us">About Us</div>
+        <div class="cart">Cart</div>
+      </nav>
     </div>
+  </header>
 
-    <div class="cards-grid">
-      <div class="product-card">
-        <div class="info-sec">
-          <p class="product-name">Sony HTS-20R Sound System</p>
-          <p class="product-price">UGX 1,200,000</p>
-          <div class="add-to-cart-btn-container">
-            <button class="brand-button">Add to Cart</button>
-          </div>
-        </div>
-        <div class="image-sec">
-          <div class="image-container">
-            <img src="./assets/sound-system1.jpeg" alt="sound-system" />
-          </div>
-        </div>
-        <div class="card-tag offer-tag"><span>-</span>14%</div>
-      </div>
-
-      <div class="product-card-2">
-        <div class="info-sec">
-          <p class="product-name">Nike &#8482 Sweatpants</p>
-          <p class="product-price">UGX 10,000</p>
-          <div class="add-to-cart-btn-container">
-            <button class="brand-button">Add to Cart</button>
-          </div>
-          <div class="card-tag offer-tag"><span>-</span>20%</div>
-        </div>
-        <div class="image-sec-2">
-          <div class="image-container-2">
-            <img src="./assets/pants1.png" alt="sweatpants" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="all">
-    <section class="search-filter-container">
+  <main>
+    <section class="special-offers">
       <div class="heading-container">
         <a href="#special-offers">
           <i class="fas fa-link"></i>
-          <h1 id="special-offers">All</h1>
+          <h1 id="special-offers">Special Offers</h1>
         </a>
       </div>
-
-      <div class="search-filter-box">
-        <div class="filter-container">
-          Filter by
-          <div class="filter-dropdown">
-            <button class="brand-button">Category</button>
-            <ul class="brand-list">
-              <li id="by-category">Category</li>
-              <li id="by-price">Price</li>
-              <li id="by-popularity">Popularity</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="search-container">
-          Search
-          <input type="text" class="brand-input" />
-          <div class="placeholder"><i class="fa-solid fa-magnifying-glass"></i></div>
-
-          <div class="search-results">
-            <ul class="brand-list">
-              <li>
-                <div id="sound-system" class="search-list-item">
-                  <div class="search-list-name">Sony HTS-20R Sound System</div>
-                  <div class="search-list-price">1,200,000</div>
-                </div>
-              </li>
-              <li>
-                <div id="sweatpants" class="search-list-item">
-                  <div class="search-list-name">Nike &#8482 Sweatpants</div>
-                  <div class="search-list-price">10,000</div>
-                </div>
-              </li>
-              <li>
-                <div id="flour" class="search-list-item">
-                  <div class="search-list-name">Nilakathir flour 1kg</div>
-                  <div class="search-list-price">11,500</div>
-                </div>
-              </li>
-              <li>
-                <div id="fridge" class="search-list-item">
-                  <div class="search-list-name">LG Fridge GL-36</div>
-                  <div class="search-list-price">6,000,000</div>
-                </div>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="all-products">
       <div class="cards-grid">
+        <div class="product-card">
+          <div class="info-sec">
+            <p class="product-name">Sony HTS-20R Sound System</p>
+            <p class="product-price">UGX 1,200,000</p>
+            <div class="add-to-cart-btn-container">
+              <button class="brand-button">Add to Cart</button>
+            </div>
+          </div>
+          <div class="image-sec">
+            <div class="image-container">
+              <img src="./assets/sound-system1.jpeg" alt="sound-system" />
+            </div>
+          </div>
+          <div class="card-tag offer-tag"><span>-</span>14%</div>
+        </div>
         <div class="product-card-2">
           <div class="info-sec">
             <p class="product-name">Nike &#8482 Sweatpants</p>
@@ -143,161 +89,255 @@
             </div>
           </div>
         </div>
-
-        <div class='product-card-2'>
-          <div class='info-sec'>
-            <p class='product-name'>Sony HTS-20R Sound System</p>
-            <p class='product-price'>UGX 1,200,000</p>
-            <div class='add-to-cart-btn-container'>
-              <button class='brand-button'>Add to Cart</button>
-            </div>
-            <div class='card-tag offer-tag'><span>-</span>14%</div>
-          </div>
-          <div class='image-sec-2'>
-            <div class='image-container-2'>
-              <img src='./assets/sound-system1.jpeg' />
-            </div>
-          </div>
-        </div>
-
-        <div class='product-card-2'>
-          <div class='info-sec'>
-            <div class="text-container">
-              <p class='product-name'>Nilakathir flour 1kg</p>
-              <p class='product-price'>UGX 11,500</p>
-            </div>
-            <div class='card-tag sold-out-tag'>ALL <br> SOLD</div>
-            <div class='add-to-cart-btn-container'>
-              <button class='brand-button'>Add to Cart</button>
-            </div>
-          </div>
-          <div class='image-sec-2'>
-            <div class='image-container-2'>
-              <img src='./assets/flour1.webp' />
-            </div>
-          </div>
-        </div>
-
-        <div class='product-card-2'>
-          <div class='info-sec'>
-            <p class='product-name'>LG Fridge GL-36</p>
-            <p class='product-price'>UGX 6,000,000</p>
-            <div class='add-to-cart-btn-container'>
-              <button class='brand-button'>Add to Cart</button>
-            </div>
-          </div>
-          <div class='image-sec-2'>
-            <div class='image-container-2'>
-              <img src='./assets/fridge1.jpg' />
-            </div>
-          </div>
-        </div>
-
-        <div class='product-card-2'>
-          <div class='info-sec'>
-            <p class='product-name'>Jordan T-shirts</p>
-            <p class='product-price'>UGX 9,000</p>
-            <div class='add-to-cart-btn-container'>
-              <button class='brand-button'>Add to Cart</button>
-            </div>
-          </div>
-          <div class='image-sec-2'>
-            <div class='image-container-2'>
-              <img src='./assets/t-shirt1.jpg' />
-            </div>
-          </div>
-        </div>
-
-        <div class='product-card-2'>
-          <div class='info-sec'>
-            <p class='product-name'>All Garden Vegetables</p>
-            <p class='product-price'>UGX 10,500</p>
-            <div class='add-to-cart-btn-container'>
-              <button class='brand-button'>Add to Cart</button>
-            </div>
-          </div>
-          <div class='image-sec-2'>
-            <div class='image-container-2'>
-              <img src='./assets/vegetables1.png' />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- The product modal is supposed to be dynamically rendered onto screen upon cliking the product-card; use javascript -->
-      <div class="heading-container">
-        <a href="#product-modal">
-          <i class="fas fa-link"></i>
-          <h1 id="product-modal">Product Modal Demo (on clicking Product Card)</h1>
-        </a>
-      </div>
-      <div class="product-modal">
-        <div class="modal-content">
-
-          <div class="modal-card">
-            <div class="info-sec">
-              <div class="text-container">
-                <p>Name</p>
-                <p id='product-name'>LG Fridge GL-36</p>
-              </div>
-              <div class="text-container">
-                <p>Price</p>
-                <p>UGX 6,000,000</p>
-              </div>
-              <div class="text-container">
-                <p>Brand</p>
-                <p>LG (South Korean brand)</p>
-              </div>
-              <div class="text-container product-description">
-                <p>Description</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ratione eligendi! Vel possimus quam
-                  sunt ut quos dolorem nulla. Suscipit tempora et molestiae, qui perspiciatis nostrum dolorum dolores
-                  nobis? Pariatur culpa blanditiis nobis ab repellat facere asperiores modi, odio, fuga, incidunt
-                  molestias excepturi impedit rerum necessitatibus. Accusamus officiis ratione iste voluptatem ullam
-                  temporibus aut ex beatae quia autem, perferendis architecto enim officia saepe quis numquam. Error
-                  magnam nemo sit similique commodi, officia corrupti consectetur eaque placeat ab odio expedita
-                  exercitationem iusto, enim accusantium doloremque, iste dicta quibusdam repudiandae. Qui
-                  exercitationem repudiandae labore quaerat ea hic repellat, praesentium inventore quidem tenetur!</p>
-              </div>
-              <div class="buttons-container">
-                <div class="add-to-cart-container">
-                  <div class="qty-input-container">
-                    <label for="quantity-to-order">Quantity</label>
-                    <input id='quantity-to-order' type="number" class="quantity-counter brand-input" min='1' max='100'>
-                  </div>
-                  <button class="brand-button">
-                    Add to Cart
-                  </button>
-                </div>
-                <div class="share-product-container">
-                  <a id='facebook' href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/products.html" target='_blank'>
-                    <i class="fa-brands fa-square-facebook"></i>
-                    SHARE
-                  </a>
-                  <a id='instagram' href="https://instagram.com/" target='_blank'>
-                    <i class="fa-brands fa-square-instagram"></i>
-                    POST
-                  </a>
-                  <a id='pinterest'
-                    href="https://pinterest.com/pin/create/button/?url=http://127.0.0.1:5500/products.html&media=http://127.0.0.1:5500/assets/fridge1.jpg&description=Check%20out%20this%20awesome%20fridge%20at%20Chikubu!"
-                    target='_blank'>
-                    <i class="fa-brands fa-square-pinterest"></i>
-                    PIN IT
-                  </a>
-                </div>
-              </div>
-
-            </div>
-            <div class="image-sec">
-              <img src="./assets/fridge1.jpg" alt="fridge">
-            </div>
-
-            <i class="close-button fa-solid fa-xmark"></i>
-          </div>
-        </div>
       </div>
     </section>
-  </section>
+    <section class="all">
+      <section class="search-filter-container">
+        <div class="heading-container">
+          <a href="#special-offers">
+            <i class="fas fa-link"></i>
+            <h1 id="special-offers">All</h1>
+          </a>
+        </div>
+        <div class="search-filter-box">
+          <div class="filter-container">
+            Filter by
+            <div class="filter-dropdown">
+              <button class="brand-button">Category</button>
+              <ul class="brand-list">
+                <li id="by-category">Category</li>
+                <li id="by-price">Price</li>
+                <li id="by-popularity">Popularity</li>
+              </ul>
+            </div>
+          </div>
+          <div class="search-container">
+            Search
+            <input type="text" class="brand-input" />
+            <div class="placeholder"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="search-results">
+              <ul class="brand-list">
+                <li>
+                  <div id="sound-system" class="search-list-item">
+                    <div class="search-list-name">Sony HTS-20R Sound System</div>
+                    <div class="search-list-price">1,200,000</div>
+                  </div>
+                </li>
+                <li>
+                  <div id="sweatpants" class="search-list-item">
+                    <div class="search-list-name">Nike &#8482 Sweatpants</div>
+                    <div class="search-list-price">10,000</div>
+                  </div>
+                </li>
+                <li>
+                  <div id="flour" class="search-list-item">
+                    <div class="search-list-name">Nilakathir flour 1kg</div>
+                    <div class="search-list-price">11,500</div>
+                  </div>
+                </li>
+                <li>
+                  <div id="fridge" class="search-list-item">
+                    <div class="search-list-name">LG Fridge GL-36</div>
+                    <div class="search-list-price">6,000,000</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="all-products">
+        <div class="cards-grid">
+          <div class="product-card-2">
+            <div class="info-sec">
+              <p class="product-name">Nike &#8482 Sweatpants</p>
+              <p class="product-price">UGX 10,000</p>
+              <div class="add-to-cart-btn-container">
+                <button class="brand-button">Add to Cart</button>
+              </div>
+              <div class="card-tag offer-tag"><span>-</span>20%</div>
+            </div>
+            <div class="image-sec-2">
+              <div class="image-container-2">
+                <img src="./assets/pants1.png" alt="sweatpants" />
+              </div>
+            </div>
+          </div>
+          <div class='product-card-2'>
+            <div class='info-sec'>
+              <p class='product-name'>Sony HTS-20R Sound System</p>
+              <p class='product-price'>UGX 1,200,000</p>
+              <div class='add-to-cart-btn-container'>
+                <button class='brand-button'>Add to Cart</button>
+              </div>
+              <div class='card-tag offer-tag'><span>-</span>14%</div>
+            </div>
+            <div class='image-sec-2'>
+              <div class='image-container-2'>
+                <img src='./assets/sound-system1.jpeg' />
+              </div>
+            </div>
+          </div>
+          <div class='product-card-2'>
+            <div class='info-sec'>
+              <div class="text-container">
+                <p class='product-name'>Nilakathir flour 1kg</p>
+                <p class='product-price'>UGX 11,500</p>
+              </div>
+              <div class='card-tag sold-out-tag'>ALL <br> SOLD</div>
+              <div class='add-to-cart-btn-container'>
+                <button class='brand-button'>Add to Cart</button>
+              </div>
+            </div>
+            <div class='image-sec-2'>
+              <div class='image-container-2'>
+                <img src='./assets/flour1.webp' />
+              </div>
+            </div>
+          </div>
+          <div class='product-card-2'>
+            <div class='info-sec'>
+              <p class='product-name'>LG Fridge GL-36</p>
+              <p class='product-price'>UGX 6,000,000</p>
+              <div class='add-to-cart-btn-container'>
+                <button class='brand-button'>Add to Cart</button>
+              </div>
+            </div>
+            <div class='image-sec-2'>
+              <div class='image-container-2'>
+                <img src='./assets/fridge1.jpg' />
+              </div>
+            </div>
+          </div>
+          <div class='product-card-2'>
+            <div class='info-sec'>
+              <p class='product-name'>Jordan T-shirts</p>
+              <p class='product-price'>UGX 9,000</p>
+              <div class='add-to-cart-btn-container'>
+                <button class='brand-button'>Add to Cart</button>
+              </div>
+            </div>
+            <div class='image-sec-2'>
+              <div class='image-container-2'>
+                <img src='./assets/t-shirt1.jpg' />
+              </div>
+            </div>
+          </div>
+          <div class='product-card-2'>
+            <div class='info-sec'>
+              <p class='product-name'>All Garden Vegetables</p>
+              <p class='product-price'>UGX 10,500</p>
+              <div class='add-to-cart-btn-container'>
+                <button class='brand-button'>Add to Cart</button>
+              </div>
+            </div>
+            <div class='image-sec-2'>
+              <div class='image-container-2'>
+                <img src='./assets/vegetables1.png' />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- The product modal is supposed to be dynamically rendered onto screen upon cliking the product-card; use javascript -->
+        <div class="heading-container">
+          <a href="#product-modal">
+            <i class="fas fa-link"></i>
+            <h1 id="product-modal">Product Modal Demo (on clicking Product Card)</h1>
+          </a>
+        </div>
+        <div class="product-modal">
+          <div class="modal-content">
+            <div class="modal-card">
+              <div class="info-sec">
+                <div class="text-container">
+                  <p>Name</p>
+                  <p id='product-name'>LG Fridge GL-36</p>
+                </div>
+                <div class="text-container">
+                  <p>Price</p>
+                  <p>UGX 6,000,000</p>
+                </div>
+                <div class="text-container">
+                  <p>Brand</p>
+                  <p>LG (South Korean brand)</p>
+                </div>
+                <div class="text-container product-description">
+                  <p>Description</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ratione eligendi! Vel possimus quam
+                    sunt ut quos dolorem nulla. Suscipit tempora et molestiae, qui perspiciatis nostrum dolorum dolores
+                    nobis? Pariatur culpa blanditiis nobis ab repellat facere asperiores modi, odio, fuga, incidunt
+                    molestias excepturi impedit rerum necessitatibus. Accusamus officiis ratione iste voluptatem ullam
+                    temporibus aut ex beatae quia autem, perferendis architecto enim officia saepe quis numquam. Error
+                    magnam nemo sit similique commodi, officia corrupti consectetur eaque placeat ab odio expedita
+                    exercitationem iusto, enim accusantium doloremque, iste dicta quibusdam repudiandae. Qui
+                    exercitationem repudiandae labore quaerat ea hic repellat, praesentium inventore quidem tenetur!</p>
+                </div>
+                <div class="buttons-container">
+                  <div class="add-to-cart-container">
+                    <div class="qty-input-container">
+                      <label for="quantity-to-order">Quantity</label>
+                      <input id='quantity-to-order' type="number" class="quantity-counter brand-input" min='1' max='100'>
+                    </div>
+                    <button class="brand-button">
+                      Add to Cart
+                    </button>
+                  </div>
+                  <div class="share-product-container">
+                    <a id='facebook' href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:5500/products.html" target='_blank'>
+                      <i class="fa-brands fa-square-facebook"></i>
+                      SHARE
+                    </a>
+                    <a id='instagram' href="https://instagram.com/" target='_blank'>
+                      <i class="fa-brands fa-square-instagram"></i>
+                      POST
+                    </a>
+                    <a id='pinterest'
+                      href="https://pinterest.com/pin/create/button/?url=http://127.0.0.1:5500/products.html&media=http://127.0.0.1:5500/assets/fridge1.jpg&description=Check%20out%20this%20awesome%20fridge%20at%20Chikubu!"
+                      target='_blank'>
+                      <i class="fa-brands fa-square-pinterest"></i>
+                      PIN IT
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="image-sec">
+                <img src="./assets/fridge1.jpg" alt="fridge">
+              </div>
+              <i class="close-button fa-solid fa-xmark"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="page-links-footer">
+      <a>Products</a>
+      <a>Terms of service</a>
+      <a>About Us</a>
+      <a>Contact Us</a>
+    </div>
+    <div class="social-media-footer">
+      <div class="icons">
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+      </div>
+      <div class="copyright">&copy 2024 | Chikubu Shoppers Ltd</div>
+    </div>
+    <div class="newsletter-footer">
+      <div class="newsletter">
+        <label for="email-input-newsletter"><span id="heading-newsletter">Join our Mailing List.</span>Receive trending updates from our store</label>
+        <div class="input-and-button">
+          <input id="email-input-newsletter" class="brand-input" type="text" />
+          <button id="submit-button-newsletter" class="brand-button">
+            JOIN
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>

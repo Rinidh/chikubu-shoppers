@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Inter:opsz@14..32&family=Merriweather&family=Poppins:wght@200;300;400;700;900&family=Whisper&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/about-us/banner.css" />
-    <link rel="stylesheet" href="./styles/about-us/our-specialty.css" />
-    <link rel="stylesheet" href="./styles/about-us/map-container.css" />
-    <link rel="stylesheet" href="./styles/about-us/contact-us.css" />
-    <!-- <title>About Us &#183 Chikubu Shoppers</title> -->
-  </head>
-  <body>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Inter:opsz@14..32&family=Merriweather&family=Poppins:wght@200;300;400;700;900&family=Whisper&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/header.css" />
+  <link rel="stylesheet" href="./styles/footer.css" />
+  <link rel="stylesheet" href="./styles/top-fold.css" />
+  <link rel="stylesheet" href="./styles/about-us/banner.css" />
+  <link rel="stylesheet" href="./styles/about-us/our-specialty.css" />
+  <link rel="stylesheet" href="./styles/about-us/map-container.css" />
+  <link rel="stylesheet" href="./styles/about-us/contact-us.css" />
+  <!-- <title>About Us &#183 Chikubu Shoppers</title> -->
+</head>
+
+<body>
+  <div class='top-fold'>
+    <span>Special Offers</span> &nbsp; on Christmas Holidays!
+    <i class="close-button fa-solid fa-xmark"></i>
+  </div>
+  <header>
+    <img style="height: 100%" src="./assets/logo.png" alt="logo" />
+    <div class="nav-container">
+      <nav>
+        <div class="home">Home</div>
+        <div class="products">
+          Products
+          <svg xmlns="http://www.w3.org/2000/svg" height="40px" width="40px" viewBox="0 -960 960 960" fill="#0f3990">
+            <path d="M480-360 280-559h400L480-360Z" />
+          </svg>
+          <div class="dropdown">
+            <div class="groceries">Groceries</div>
+            <div class="electronics">Electronics</div>
+            <div class="clothing">Clothing</div>
+          </div>
+        </div>
+        <div class="about-us">About Us</div>
+        <div class="cart">Cart</div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
     <section class="banner">
       <div class="heading-banner">
         <div class="text-left">About Us</div>
@@ -36,14 +59,10 @@
       <div class="image-banner">
         <div class="freespace-left"></div>
         <div class="image-right">
-          <img
-            src="./assets/interior1.jpg"
-            alt="interior of chikubu shoppers"
-          />
+          <img src="./assets/interior1.jpg" alt="interior of chikubu shoppers" />
         </div>
       </div>
     </section>
-
     <section class="start-up heading-text-block">
       <div class="heading-container">
         <a href="#start-up">
@@ -68,7 +87,6 @@
         of serving our community!
       </p>
     </section>
-
     <section class="our-specialty heading-text-block">
       <div class="heading-container">
         <a href="#our-specialty">
@@ -133,7 +151,6 @@
         </div>
       </div>
     </section>
-
     <section class="map-container">
       <div class="heading-container">
         <a href="#find-us-here">
@@ -141,18 +158,10 @@
           <h1 id="find-us-here">Find Us Here</h1>
         </a>
       </div>
-
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.35986343417744!2d32.57448069309195!3d0.3155430898820074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc8263163a17%3A0x95428fc7aba49db0!2sKikuubo%20Rd%2C%20Kampala!5e0!3m2!1sen!2sug!4v1735285740377!5m2!1sen!2sug"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+        width="600" height="450" style="border: 0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-
     <section class="contact-us">
       <div class="heading-container">
         <a href="#contact-us">
@@ -160,15 +169,9 @@
           <h1 id="contact-us">Contact Us</h1>
         </a>
       </div>
-
       <div class="form-external-container">
-        <iframe
-          id="form"
-          src="./contact-us-form.html"
-          title="Please fill in the form"
-        >
+        <iframe id="form" src="./contact-us-form.html" title="Please fill in the form">
         </iframe>
-
         <div class="contact-info">
           <div>
             <i class="fa-solid fa-square-phone"></i>
@@ -178,7 +181,6 @@
           <div>
             <i class="fa-solid fa-envelopes-bulk"></i> rinidhdhokia@gmail.com
           </div>
-
           <a href="#form">
             <div class="advert-info">
               <i class="fa-solid fa-circle-exclamation"></i>
@@ -191,5 +193,35 @@
         </div>
       </div>
     </section>
-  </body>
+  </main>
+
+  <footer>
+    <div class="page-links-footer">
+      <a>Products</a>
+      <a>Terms of service</a>
+      <a>About Us</a>
+      <a>Contact Us</a>
+    </div>
+    <div class="social-media-footer">
+      <div class="icons">
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+      </div>
+      <div class="copyright">&copy 2024 | Chikubu Shoppers Ltd</div>
+    </div>
+    <div class="newsletter-footer">
+      <div class="newsletter">
+        <label for="email-input-newsletter"><span id="heading-newsletter">Join our Mailing List.</span>Receive trending updates from our store</label>
+        <div class="input-and-button">
+          <input id="email-input-newsletter" class="brand-input" type="text" />
+          <button id="submit-button-newsletter" class="brand-button">
+            JOIN
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>

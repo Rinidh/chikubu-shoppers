@@ -1,6 +1,7 @@
-.footer {
+footer {
   width: 100%;
   height: 50vh;
+  margin-top: 100px;
   background-color: rgb(220, 229, 247);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -29,7 +30,6 @@
 .social-media-footer i {
   font-size: 40px;
   transition: all 200ms ease;
-
 }
 
 .social-media-footer .fa-square-instagram:hover,
