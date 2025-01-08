@@ -27,7 +27,6 @@
 }
 
 .grid .personal-info {
-  border: 2px solid red;
   height: 80px;
   display: flex;
   align-items: center;

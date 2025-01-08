@@ -8,10 +8,13 @@ At 100 zoom:
   width: 738px
   height: 1513px
 
-save category card snipp
-do home pg
-link "our specialty" in hero sec to about pg, specific section
-add hrefs at footer links & links as needed on home pg. wrap category cards in <a>
+
+above header bar christmas offer
+put header footer in all
+learn routing in html
+  link "our specialty" in hero sec to about pg, specific section
+  add hrefs at footer links & links as needed on home pg. wrap category cards in <a>
+  link 'special offers...' above header to pdt pg
 mailto in contact-info
 update direct pdt sharing links in pdt modal after deploying app. Check thoroughly @ (each) link
 

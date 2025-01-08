@@ -5,6 +5,7 @@ header {
   display: flex;
   flex-direction: row;
   position: fixed;
+  top: 35px;
   z-index: 90;
 }
 
