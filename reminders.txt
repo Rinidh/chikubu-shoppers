@@ -9,7 +9,6 @@ At 100 zoom:
   height: 1513px
 
 
-mailto in contact-info
 deploy to vercel
 update direct pdt sharing links in pdt modal after deploying app. Check thoroughly @ (each) link
 
