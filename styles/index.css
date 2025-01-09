@@ -17,6 +17,11 @@ main {
   margin-top: 20vh;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(15, 57, 144);
+}
+
 /* brand-button is the general styling for any catchy button */
 .brand-button {
   border: 3px solid rgb(15, 57, 144);

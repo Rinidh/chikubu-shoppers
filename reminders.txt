@@ -9,12 +9,8 @@ At 100 zoom:
   height: 1513px
 
 
-put header footer in all
-learn routing in html
-  link "our specialty" in hero sec to about pg, specific section
-  add hrefs at footer links & links as needed on home pg. wrap category cards in <a>
-  link 'special offers...' above header to pdt pg
 mailto in contact-info
+deploy to vercel
 update direct pdt sharing links in pdt modal after deploying app. Check thoroughly @ (each) link
 
 JS TO ADD:
@@ -28,6 +24,9 @@ JS TO ADD:
   -show in cart page "No products in cart yet"
   -update the qty selected in summary in cart page when user changes qty from bar below card
   -top-fold close button
+  -upon cliking heading link, heading goes behind header - disappear header upon scroll
+  -each item of 'dropdown in heeader & category-card' lead to same point in pdt pg. If user cliks on eg 'Groceries', use js t filter and lead to pdt pg only while only showing groceries
+
 
   
 COMPONENTS (SNIPPETS) TO MAKE:
