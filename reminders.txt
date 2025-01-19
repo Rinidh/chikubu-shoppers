@@ -4,13 +4,11 @@ rgba(15, 58, 144, 0.48) - 800
 rgb(203, 218, 247) - 300
 rgb(220, 229, 247) - 200
 rgb(240, 244, 252) - 100
-At 100 zoom:
-  width: 738px
-  height: 1513px
 
 
-deploy to vercel
-update direct pdt sharing links in pdt modal after deploying app. Check thoroughly @ (each) link
+start mobile first with hero sec
+merge this new branxh but leave it undeleted
+
 
 JS TO ADD:
   -filter products acc to dropdown, reload pdt cards with new headings eg for "by category": clothing, electronics... and for "by popularity": most loved & others
@@ -26,7 +24,9 @@ JS TO ADD:
   -upon cliking heading link, heading goes behind header - disappear header upon scroll
   -each item of 'dropdown in heeader & category-card' lead to same point in pdt pg. If user cliks on eg 'Groceries', use js t filter and lead to pdt pg only while only showing groceries
 
-
+At 100 zoom:
+  width: 738px
+  height: 1513px
   
 COMPONENTS (SNIPPETS) TO MAKE:
   - magnifying glass and text as placeholder to <input>, which disappears on inputting text
@@ -36,7 +36,13 @@ COMPONENTS (SNIPPETS) TO MAKE:
   - <button> with border-width of 1px and on hover, border-width of 2px without causing nearby divs to move (box-sizing: border-box doesn't work)
 
 ------------------------
+@media only screen and (min-width: 600px) {
 
+}
+
+@media only screen and (min-width: 769px) {
+  
+}
 
 
 

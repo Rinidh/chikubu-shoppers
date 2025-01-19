@@ -1,9 +1,17 @@
+* {
+  /* transition: all 200ms ease; */
+  margin: 0;
+  padding: 0;
+}
+
 .hero-section {
-  height: 80vh;
-  margin: 0px 10px 200px 10px;
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  border: 4px solid rgb(15, 57, 144);
+  flex-direction: column;
+  border: 7px solid rgb(15, 57, 144);
   border-radius: 15px;
+  overflow: hidden;
 }
 
 .right-hero-sec {
@@ -17,15 +25,14 @@
 
 .left-hero-sec {
   flex: 3;
-  padding-left: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .left-hero-sec h1 {
-  font: 900 normal 80px 'fredoka';
-  margin-bottom: 20px;
+  font: 900 normal 45px /1.5 'fredoka';
+  margin-bottom: calc(2vw - 5px);
+  text-align: center;
 }
 
 .left-hero-sec h1 span {
@@ -34,7 +41,8 @@
 
 .left-hero-sec h5 {
   font-weight: 400;
-  font-size: 23px;
+  font-size: 15px;
+  margin: 0px 5px;
 }
 
 .left-hero-sec h5 a {
@@ -47,6 +55,65 @@
 }
 
 .left-hero-sec .brand-button {
-  margin-bottom: 40px;
-  width: 400px;
+  margin: 7px auto;
+  width: 80%;
+}
+
+@media only screen and (min-width: 600px) {
+  .hero-section {
+    height: 80vh;
+    margin: 0px 10px 200px 10px;
+    flex-direction: row;
+    border: 4px solid rgb(15, 57, 144);
+  }
+
+  .right-hero-sec {
+    flex: 2;
+  }
+
+  .right-hero-sec img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .left-hero-sec {
+    flex: 3;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .left-hero-sec h1 {
+    font: 900 normal 80px 'fredoka';
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  .left-hero-sec h1 span {
+    text-decoration: overline;
+  }
+
+  .left-hero-sec h5 {
+    font-weight: 400;
+    font-size: 23px;
+    margin: 25px 0px;
+  }
+
+  .left-hero-sec h5 a {
+    font-weight: 700;
+    transition: all 200ms ease;
+  }
+
+  .left-hero-sec h5 a:hover {
+    color: rgba(15, 58, 144, 0.5);
+  }
+
+  .left-hero-sec .brand-button {
+    margin-bottom: 40px;
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
 }
