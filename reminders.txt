@@ -5,8 +5,10 @@ rgb(203, 218, 247) - 300
 rgb(220, 229, 247) - 200
 rgb(240, 244, 252) - 100
 
-
-start mobile first with hero sec
+responsive design strategy:
+  -start mobile first with hero sec
+  -copy mobile's code into tablet's code, modify it, THEN copy tablet's code into laptop screen's code
+  -keep eliminating unnecessary props from tablet's code
 merge this new branxh but leave it undeleted
 
 
@@ -43,6 +45,8 @@ COMPONENTS (SNIPPETS) TO MAKE:
 @media only screen and (min-width: 769px) {
   
 }
+
+
 
 
 
