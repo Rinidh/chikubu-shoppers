@@ -8,6 +8,8 @@
 .hero-section {
   height: 100vh;
   width: 100vw;
+  max-width: 1280px; /* above 1280px is x-large screens; */
+  max-height: 590px;
   display: flex;
   flex-direction: column;
   border: 7px solid rgb(15, 57, 144);
@@ -94,9 +96,10 @@
 
 @media only screen and (min-width: 769px) {
   .hero-section {
-    margin: 0px 10px 200px 10px;
+    margin: 0px auto 200px auto;
     flex-direction: row;
-    border: 4px solid rgb(15, 57, 144);
+    border: 8px solid rgb(15, 57, 144);
+    box-shadow: 6px 15px 50px 10px rgb(181, 185, 193);
   }
 
   .left-hero-sec {
@@ -105,19 +108,17 @@
   }
 
   .left-hero-sec h1 {
-    font-size: 80px;
-    line-height: normal;
-    margin-top: 35px;
-    margin-bottom: 20px;
+    font-size: 70px;
+    margin: 45px 30px 20px;
+    text-align: start;
   }
 
   .left-hero-sec h5 {
-    font-size: 23px;
-    margin: 25px 0px;
+    font-size: 18px;
+    margin: 25px 0px 15px;
   }
 
   .left-hero-sec .brand-button {
-    margin-bottom: 40px;
-    width: 400px;
+    margin: 0px auto 30px 10px;
   }
 }
