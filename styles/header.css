@@ -2,6 +2,7 @@ header {
   background-color: rgb(220, 229, 247);
   height: 15vh;
   width: 100vw;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
   position: fixed;
@@ -9,62 +10,112 @@ header {
   z-index: 90;
 }
 
-nav {
-  width: 600px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  font-weight: 700;
+img {
+  height: 100%;
+  width: auto;
 }
 
-nav div {
-  cursor: pointer;
-}
-
-nav .products {
-  height: 70px; /*to easily hover into productsNav to show dropdown */
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.nav-container {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-}
-
-.dropdown {
-  border-radius: 8px;
-  background-color: rgb(220, 229, 247);
-  position: absolute;
-  top: 60px;
-  padding: 18px;
+nav.large-screen {
   display: none;
 }
 
-.dropdown div {
-  margin: 5px 0px;
-  border: 2px solid rgb(220, 229, 247);
-  border-radius: 5px;
-  padding: 3px 6px;
-  transition: all 200ms;
-  cursor: pointer;
+nav.small-screen {
+  display: flex;
+  align-items: center;
+  margin-right: min(4vw, 20px);
+  font: normal 700 26px /1 'fredoka';
 }
 
-.dropdown div:hover {
-  border: 2px solid rgb(15, 57, 144);
+nav.small-screen i {
+  margin-left: min(3vw, 17px);
 }
 
-.products:hover .dropdown {
-  display: block;
+.nav-container {
+  flex: 1;
+  display: flex;
+  justify-content: end;
 }
 
-.products svg {
-  transition: transform 300ms ease;
-}
+@media only screen and (min-width: 769px) {
+  header {
+    background-color: rgb(220, 229, 247);
+    height: 15vh;
+    width: 100vw;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 35px;
+    z-index: 90;
+  }
 
-.products:hover svg {
-  transform: rotate(180deg);
+  img {
+    height: 100%;
+    width: auto;
+  }
+
+  nav.large-screen {
+    display: block;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 700;
+  }
+
+  nav.large-screen div {
+    cursor: pointer;
+  }
+
+  nav.large-screen .products {
+    height: 70px; /*to easily hover into productsnav.large-screen to show dropdown */
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  nav.small-screen {
+    display: none;
+  }
+
+  .nav-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dropdown {
+    border-radius: 8px;
+    background-color: rgb(220, 229, 247);
+    position: absolute;
+    top: 60px;
+    padding: 18px;
+    display: none;
+  }
+
+  .dropdown div {
+    margin: 5px 0px;
+    border: 2px solid rgb(220, 229, 247);
+    border-radius: 5px;
+    padding: 3px 6px;
+    transition: all 200ms;
+    cursor: pointer;
+  }
+
+  .dropdown div:hover {
+    border: 2px solid rgb(15, 57, 144);
+  }
+
+  .products:hover .dropdown {
+    display: block;
+  }
+
+  .products svg {
+    transition: transform 300ms ease;
+  }
+
+  .products:hover svg {
+    transform: rotate(180deg);
+  }
 }

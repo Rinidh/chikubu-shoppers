@@ -5,6 +5,8 @@ rgb(203, 218, 247) - 300
 rgb(220, 229, 247) - 200
 rgb(240, 244, 252) - 100
 
+
+create menu icon. put it at mobile first. remove it at 768px breakpt 
 responsive design strategy:
   -start mobile first with hero sec
   -copy mobile's code into tablet's code, modify it, THEN copy tablet's code into laptop screen's code
