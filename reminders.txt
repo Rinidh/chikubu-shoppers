@@ -6,11 +6,12 @@ rgb(220, 229, 247) - 200
 rgb(240, 244, 252) - 100
 
 
-create menu icon. put it at mobile first. remove it at 768px breakpt 
-responsive design strategy:
-  -start mobile first with hero sec
-  -copy mobile's code into tablet's code, modify it, THEN copy tablet's code into laptop screen's code
-  -keep eliminating unnecessary props from tablet's code
+show menu at 425px below (temporarily), don't show at tablet
+responsive design edit strategy (after initally designing for desktop):
+  -copy cuurent code into tablet's query
+  -modify current code for mobile (as best to start mobile first)
+  -keep comparing & eliminating unnecessary props from tablet's code
+  -copy tablet's code into laptop size code & edit
 merge this new branxh but leave it undeleted
 
 
@@ -27,6 +28,7 @@ JS TO ADD:
   -top-fold close button
   -upon cliking heading link, heading goes behind header - disappear header upon scroll
   -each item of 'dropdown in heeader & category-card' lead to same point in pdt pg. If user cliks on eg 'Groceries', use js t filter and lead to pdt pg only while only showing groceries
+  -menu icon in small screen, side menu list appears. Close button in menu. (menu div has been set to appear only in 425px below, remove this)
 
 At 100 zoom:
   width: 738px

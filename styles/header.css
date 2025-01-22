@@ -26,7 +26,7 @@ nav.small-screen {
   font: normal 700 26px /1 'fredoka';
 }
 
-nav.small-screen i {
+nav.small-screen .menu-button {
   margin-left: min(3vw, 17px);
 }
 
@@ -34,6 +34,29 @@ nav.small-screen i {
   flex: 1;
   display: flex;
   justify-content: end;
+}
+
+nav.small-screen .menu {
+  display: block;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: min(65vw, 345px);
+  height: 100vh;
+  padding: 25px 20px;
+  background-color: rgb(220, 229, 247);
+  box-shadow: -10px 0px 10px 5px rgba(0, 0, 0, 0.35);
+}
+
+nav.small-screen .menu div {
+  display: block;
+  margin: 30px 0px;
+  font-size: 29px;
+}
+
+nav.small-screen .menu .close-button {
+  top: 20px;
+  right: 25px;
 }
 
 @media only screen and (min-width: 769px) {
@@ -117,5 +140,12 @@ nav.small-screen i {
 
   .products:hover svg {
     transform: rotate(180deg);
+  }
+}
+
+/* side menu has been set to only show at 425px & below, remove this after adding JS to close button */
+@media only screen and (min-width: 426px) {
+  nav.small-screen .menu {
+    display: none;
   }
 }
