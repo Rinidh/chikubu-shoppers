@@ -37,7 +37,7 @@ nav.small-screen .menu-button {
 }
 
 nav.small-screen .menu {
-  display: block;
+  display: none; /* block; temorarily hide small screen menu */
   position: fixed;
   top: 0px;
   right: 0px;
