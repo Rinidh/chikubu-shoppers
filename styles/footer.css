@@ -1,10 +1,12 @@
 footer {
   width: 100%;
-  height: 50vh;
+  height: fit-content;
   margin-top: 100px;
+  padding: 10px;
+  font-size: 15px;
   background-color: rgb(220, 229, 247);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .page-links-footer {
@@ -15,16 +17,18 @@ footer {
 }
 
 .page-links-footer a {
-  margin: 10px;
+  margin: 10px 0px;
   cursor: pointer;
   transition: all 200ms ease;
 }
 
 .social-media-footer {
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 1px solid rgba(15, 58, 144, 0.48);
 }
 
 .social-media-footer i {
@@ -40,7 +44,44 @@ footer {
 
 .newsletter-footer {
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   padding-top: 50px;
+}
+
+.brand-input {
+  width: clamp(50px, 100%, 300px);
+}
+
+@media only screen and (min-width: 600px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .newsletter-footer {
+    grid-column: 1 / 3;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-media-footer {
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  footer {
+    padding: 30px 15px 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 20px;
+  }
+
+  .newsletter-footer {
+    grid-column: 3;
+  }
+
+  .social-media-footer {
+    padding: 20px;
+    text-align: center;
+  }
 }

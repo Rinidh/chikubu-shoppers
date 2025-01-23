@@ -11,9 +11,9 @@
 .reviews-section .grid {
   display: grid;
   grid-template-columns: 1fr;
-  width: 95vw;
+  width: 90vw;
   max-width: 1300px;
-  height: 600px;
+  height: fit-content;
   margin-left: auto;
   margin-right: auto;
   /* value of auto ensures div.grid is horizontally centered */
