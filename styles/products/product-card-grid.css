@@ -1,94 +1,22 @@
+/* See earlier commits for Design 1 */
+
 .cards-grid {
   width: 100%;
+  padding: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 40px;
 }
 
-/* Design 1 */
-.product-card {
-  background-color: rgb(240, 244, 252);
-  height: 300px;
-  border: 1px solid rgba(15, 58, 144, 0.48);
-  border-radius: 10px;
-  display: flex;
-  overflow: hidden;
-  transition: all 200ms ease;
-  position: relative;
-}
-
-.product-card:hover {
-  box-shadow: 0px 3px 20px 4px rgb(208, 214, 214);
-}
-
-.product-card .info-sec {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.product-card .info-sec .product-name {
-  margin-top: 42px;
-  margin-bottom: 6px;
-  padding-left: 15px;
-  font-size: 27px;
-  font-weight: 700;
-}
-
-.product-card .info-sec .product-price {
-  font-size: 19px;
-  padding-left: 15px;
-  margin: 10px 0px 20px;
-}
-
-.product-card .info-sec .add-to-cart-btn-container {
-  margin-bottom: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.product-card .image-sec {
-  margin-right: 15px;
-  overflow: hidden;
-  width: 40%;
-  display: flex;
-  align-items: center;
-}
-
-.image-sec .image-container {
-  overflow: hidden;
-  width: 100%;
-  height: 80%;
-  border-radius: 8px;
-}
-
-.image-sec .image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: all 200ms ease;
-}
-
-.image-container:hover img {
-  transform: scale(1.3);
-}
-
 /* Design 2 */
-/* alternatively, these hover-styles also create a good look */
 .product-card-2 {
   background-color: rgb(240, 244, 252);
-  height: 300px;
+  height: 200px;
   border: 1px solid rgba(15, 58, 144, 0.48);
   border-radius: 10px;
   display: flex;
   transition: all 200ms ease;
   position: relative;
-}
-
-.product-card-2:hover {
-  box-shadow: 0px 3px 20px 4px rgb(208, 214, 214);
 }
 
 .product-card-2 .info-sec {
@@ -101,17 +29,20 @@
 }
 
 .product-card-2 .info-sec .product-name {
-  margin-top: 42px;
+  font-size: 15px;
+  margin-top: 20px;
   margin-bottom: 6px;
-  padding-left: 15px;
-  font-size: 27px;
+  padding-right: 7px;
+  padding-left: 1em;
   font-weight: 700;
+  text-align: center;
 }
 
 .product-card-2 .info-sec .product-price {
-  font-size: 19px;
+  font-size: 13px;
   padding-left: 15px;
-  margin: 10px 0px 20px;
+  margin: 0px 0px 20px;
+  text-align: center;
 }
 
 .product-card-2 .info-sec .add-to-cart-btn-container {
@@ -142,11 +73,6 @@
   height: 100%;
   object-fit: cover;
   transition: all 200ms ease;
-}
-
-.image-container-2:hover img {
-  transform: scale(1.25);
-  border-radius: 8px;
 }
 
 /* Special Offer tag on top left */
@@ -181,4 +107,48 @@
   font-size: 13px;
   font-weight: 400;
   text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-card-2 {
+    height: 300px;
+  }
+
+  .product-card-2 .info-sec .product-name {
+    font-size: 22px;
+    padding-left: 14px;
+    margin-top: 30px;
+    margin-bottom: 6px;
+    text-align: left;
+  }
+
+  .product-card-2 .info-sec .product-price {
+    font-size: 19px;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .cards-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .product-card-2:hover {
+    box-shadow: 0px 3px 20px 4px rgb(208, 214, 214);
+  }
+
+  .product-card-2 .info-sec .product-name {
+    font-size: 25px;
+    margin-top: 42px;
+  }
+
+  .product-card-2 .info-sec .product-price {
+    font-size: 21px;
+    margin-top: 10px;
+  }
 }

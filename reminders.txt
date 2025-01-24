@@ -6,12 +6,14 @@ rgb(220, 229, 247) - 200
 rgb(240, 244, 252) - 100
 
 
+how to prevent heading from going behind header upon cliking on-pg link
 show menu at 425px below (temporarily), don't show at tablet after finish all home page
 responsive design edit strategy (after initally designing for desktop):
   -copy cuurent code into tablet's query
   -modify current code for mobile (as best to start mobile first)
   -keep comparing & eliminating unnecessary props from tablet's code
   -copy tablet's code into laptop size code & edit
+  -first make one component responsive at ALL screen sizes, then next component; instead of making all components responsive at mobile, then all components responsive for laptop
 merge this new branxh but leave it undeleted
 
 

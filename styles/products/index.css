@@ -10,15 +10,11 @@ h1 {
   font-family: 'merriweather';
 }
 
-.heading-container {
-  /* for proper positioning of headings specific to this page */
-  margin-left: 0px;
+/* .heading-container { */
+/* for proper positioning of headings specific to this page */
+/* margin-left: 0px;
   margin-bottom: 30px;
-}
-
-.special-offers {
-  margin: 100px 25px;
-}
+} */
 
 .all .all-products {
   width: 100%;
