@@ -6,8 +6,6 @@ rgb(220, 229, 247) - 200
 rgb(240, 244, 252) - 100
 
 
-learn 'grid-column'
-only show diff review card sizes 768px above. Tablet and below, use one card per row
 show menu at 425px below (temporarily), don't show at tablet after finish all home page
 responsive design edit strategy (after initally designing for desktop):
   -copy cuurent code into tablet's query

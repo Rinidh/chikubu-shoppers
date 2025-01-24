@@ -32,9 +32,9 @@
     </div>
   </a>
   <header>
-    <img style="height: 100%" src="./assets/logo.png" alt="logo" />
+    <img src="./assets/logo.png" alt="logo" />
     <div class="nav-container">
-      <nav>
+      <nav class="large-screen">
         <div class="home"><a href="index.html" target="_blank">Home</a></div>
         <div class="products">
           <a href="products.html" target="_blank">Products</a>
@@ -50,6 +50,21 @@
         <div class="about-us"><a href="about-us.html" target="_blank">About Us</a></div>
         <div class="cart"><a href="cart.html" target="_blank">Cart</a></div>
       </nav>
+
+      <nav class="small-screen">
+        Menu
+        <i class="menu-button fa-solid fa-bars"></i>
+
+        <div class="menu">
+          <div class="home"><a href="index.html" target="_blank">Home</a></div>
+          <div class="products">
+            <a href="products.html" target="_blank">Products</a>
+          </div>
+          <div class="about-us"><a href="about-us.html" target="_blank">About Us</a></div>
+          <div class="cart"><a href="cart.html" target="_blank">Cart</a></div>
+          <i class="close-button fa-solid fa-xmark"></i>
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -62,21 +77,23 @@
         </a>
       </div>
       <div class="cards-grid">
-        <div class="product-card">
+        <div class="product-card-2">
           <div class="info-sec">
             <p class="product-name">Sony HTS-20R Sound System</p>
             <p class="product-price">UGX 1,200,000</p>
             <div class="add-to-cart-btn-container">
               <button class="brand-button">Add to Cart</button>
             </div>
+            <div class="card-tag offer-tag"><span>-</span>14%</div>
+
           </div>
-          <div class="image-sec">
-            <div class="image-container">
+          <div class="image-sec-2">
+            <div class="image-container-2">
               <img src="./assets/sound-system1.jpeg" alt="sound-system" />
             </div>
           </div>
-          <div class="card-tag offer-tag"><span>-</span>14%</div>
         </div>
+
         <div class="product-card-2">
           <div class="info-sec">
             <p class="product-name">Nike &#8482 Sweatpants</p>
@@ -94,6 +111,8 @@
         </div>
       </div>
     </section>
+
+    <!--
     <section class="all">
       <section class="search-filter-container">
         <div class="heading-container">
@@ -240,8 +259,12 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- The product modal is supposed to be dynamically rendered onto screen upon cliking the product-card; use javascript -->
+        </div> 
+        -->
+
+    <!-- The product modal is supposed to be dynamically rendered onto screen upon cliking the product-card; use javascript -->
+
+    <!--
         <div class="heading-container">
           <a href="#product-modal">
             <i class="fas fa-link"></i>
@@ -313,33 +336,34 @@
       </section>
     </section>
   </main>
+-->
 
-  <footer>
-    <div class="page-links-footer">
-      <a href="products.html">Products</a>
-      <a href="terms-and-policies.html">Terms of service & Policies</a>
-      <a href="about-us.html">About Us</a>
-      <a href="contact-us-form.html">Contact Us</a>
-    </div>
-    <div class="social-media-footer">
-      <div class="icons">
-        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+    <footer>
+      <div class="page-links-footer">
+        <a href="products.html">Products</a>
+        <a href="terms-and-policies.html">Terms of service & Policies</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact-us-form.html">Contact Us</a>
       </div>
-      <div class="copyright">&copy 2024 | Chikubu Shoppers Ltd</div>
-    </div>
-    <div class="newsletter-footer">
-      <div class="newsletter">
-        <label for="email-input-newsletter"><span id="heading-newsletter">Join our Mailing List.</span>Receive trending updates from our store</label>
-        <div class="input-and-button">
-          <input id="email-input-newsletter" class="brand-input" type="text" />
-          <button id="submit-button-newsletter" class="brand-button">
-            JOIN
-          </button>
+      <div class="social-media-footer">
+        <div class="icons">
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+        <div class="copyright">&copy 2024 | Chikubu Shoppers Ltd</div>
+      </div>
+      <div class="newsletter-footer">
+        <div class="newsletter">
+          <label for="email-input-newsletter"><span id="heading-newsletter">Join our Mailing List.</span>Receive trending updates from our store</label>
+          <div class="input-and-button">
+            <input id="email-input-newsletter" class="brand-input" type="text" />
+            <button id="submit-button-newsletter" class="brand-button">
+              JOIN
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
 </body>
 
