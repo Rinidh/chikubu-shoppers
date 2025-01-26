@@ -135,7 +135,7 @@
 @media only screen and (min-width: 769px) {
   .cards-grid {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 28px;
   }
 
   .product-card-2:hover {
@@ -150,5 +150,10 @@
   .product-card-2 .info-sec .product-price {
     font-size: 21px;
     margin-top: 10px;
+  }
+
+  .image-container-2:hover img {
+    transform: scale(1.25);
+    border-radius: 8px;
   }
 }
