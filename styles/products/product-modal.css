@@ -3,13 +3,13 @@
   top: 0px;
   left: 0px;
   position: fixed; */
-  height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.35);
   z-index: 100;
 }
 
 .modal-content {
+  /* used for centering modal-card; */
   height: 100%;
   width: 100%;
   display: flex;
@@ -18,11 +18,13 @@
 }
 
 .modal-card {
+  border: 2px solid rgb(203, 218, 247);
   background-color: white;
-  height: 90vh;
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   border-radius: 10px;
   display: flex;
+  flex-direction: column-reverse;
   overflow: hidden;
   position: relative;
 }
@@ -36,17 +38,14 @@
 }
 
 .modal-card img {
-  width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: contain;
   object-position: center;
 }
 
 .modal-card .info-sec {
   flex: 3;
-  border-right: 2px solid rgb(203, 218, 247);
-
-  padding: 20px;
+  padding: 8px;
   display: flex;
   flex-direction: column;
 }
@@ -54,6 +53,7 @@
 .modal-card .text-container {
   margin: 5px 0px;
   padding: 5px 0px;
+  font-size: 15px;
 }
 
 .modal-card .text-container p {
@@ -61,7 +61,7 @@
 }
 
 .modal-card .text-container p:first-child {
-  font-size: 15px;
+  font-size: 11px;
 }
 
 .modal-card .product-description {
@@ -71,17 +71,19 @@
 }
 
 .modal-card #product-name {
-  font: 700 normal 40px 'poppins';
+  font: 700 normal 25px 'poppins';
 }
 
 .modal-card .buttons-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
 }
 
 .modal-card .add-to-cart-container {
   display: flex;
+  margin-bottom: 12px;
 }
 
 .modal-card .qty-input-container {
@@ -91,7 +93,11 @@
 .modal-card .add-to-cart-container input {
   display: inline-block;
   height: 43px;
-  max-width: 75px;
+  max-width: 100px;
+}
+
+.modal-card .add-to-cart-container .brand-button {
+  margin-top: 10px;
 }
 
 .modal-card .add-to-cart-container label {
@@ -119,10 +125,6 @@
   cursor: pointer;
 }
 
-.modal-card .share-product-container a:hover {
-  background-color: rgb(241, 239, 239);
-}
-
 .modal-card .share-product-container i {
   margin-right: 2px;
 }
@@ -137,4 +139,66 @@
 
 .modal-card .share-product-container #pinterest {
   color: red;
+}
+
+@media only screen and (min-width: 600px) {
+  .product-modal {
+    height: 100vh;
+  }
+
+  .modal-card {
+    height: 100%;
+    flex-direction: row;
+  }
+
+  .modal-card img {
+    height: 80%;
+  }
+
+  .modal-card .info-sec {
+    border-right: 2px solid rgb(203, 218, 247);
+    padding: 20px;
+  }
+
+  .modal-card .text-container {
+    font-size: 17px;
+  }
+
+  .modal-card .text-container p:first-child {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .modal-card {
+    height: 90%;
+  }
+
+  .modal-card .text-container {
+    font-size: 20px;
+  }
+
+  .modal-card .text-container p:first-child {
+    font-size: 15px;
+  }
+
+  .modal-card .buttons-container {
+    flex-direction: row;
+  }
+
+  .modal-card #product-name {
+    font-size: 40px;
+  }
+
+  .modal-card .add-to-cart-container {
+    margin-bottom: 0px;
+  }
+
+  .modal-card .add-to-cart-container input {
+    max-width: 75px;
+  }
+
+  .modal-card .share-product-container a:hover {
+    background-color: rgb(241, 239, 239);
+  }
 }

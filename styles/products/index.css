@@ -18,10 +18,15 @@ h1 {
 
 .all .all-products {
   width: 100%;
-  padding: 200px 25px;
+  padding: 50px 10px;
 }
 
 .all .all-products .heading-container {
-  margin-top: 150px;
   color: rgb(15, 57, 144);
+}
+
+@media only screen and (min-width: 600px) {
+  .all .all-products {
+    padding: 200px 25px;
+  }
 }
