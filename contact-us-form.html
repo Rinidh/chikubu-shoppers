@@ -1,86 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/about-us/contact-us-form.css" />
-    <title>Contact Us Form</title>
-  </head>
-  <body>
-    <div class="form-container">
-      <form action="">
-        <div class="form-segment">
-          <label for="name">Name</label>
-          <input
-            placeholder="Common-name Surname "
-            id="name"
-            type="text"
-            name="name"
-          />
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <div class="form-segment">
-          <label for="email">
-            Email address
-            <span class="asterisk-required">*</span>
-          </label>
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/about-us/contact-us-form.css" />
+  <title>Contact Us Form</title>
+</head>
 
-          <input
-            placeholder="abc@gmail.com"
-            type="email"
-            id="email"
-            name="email"
-            required
-          />
-        </div>
+<body>
+  <div class="form-container">
+    <form action="">
+      <div class="form-segment">
+        <label for="name">Name</label>
+        <input placeholder="Common-name Surname " id="name" type="text" name="name" />
+      </div>
 
-        <div class="form-segment">
-          <label for="reason">
-            Reason
-            <span class="asterisk-required">*</span>
-          </label>
-          <div class="reason-radio-group">
-            <div class="radio-container">
-              <input type="radio" value="product-inquiry" name="reason" />
-              <label for="product-inquiry">Product Inquiry</label>
-            </div>
+      <div class="form-segment">
+        <label for="email">
+          Email address
+          <span class="asterisk-required">*</span>
+        </label>
 
-            <div class="radio-container">
-              <input type="radio" value="complaint" name="reason" />
-              <label for="complaint">Complaint</label>
-            </div>
+        <input placeholder="abc@gmail.com" type="email" id="email" name="email" required />
+      </div>
 
-            <div class="radio-container">
-              <input type="radio" value="advertise" name="reason" />
-              <label for="advertise">Advertise on our pages</label>
-            </div>
+      <div class="form-segment">
+        <label for="reason">
+          Reason
+          <span class="asterisk-required">*</span>
+        </label>
+        <div class="reason-radio-group">
+          <div class="radio-container">
+            <input id='product-inquiry' type="radio" value="product-inquiry" name="reason" />
+            <!-- id attribute is used to connect <input> to the <label> eg clicking the label activates the radio input -->
+            <label for="product-inquiry">Product Inquiry</label>
+          </div>
 
-            <div class="radio-container">
-              <input type="radio" value="other" name="reason" />
-              <label for="other">Other</label>
-            </div>
+          <div class="radio-container">
+            <input id='complaint' type="radio" value="complaint" name="reason" />
+            <label for="complaint">Complaint</label>
+          </div>
+
+          <div class="radio-container">
+            <input id='advertise' type="radio" value="advertise" name="reason" />
+            <label for="advertise">Advertise on our pages</label>
+          </div>
+
+          <div class="radio-container">
+            <input id='other' type="radio" value="other" name="reason" />
+            <label for="other">Other</label>
           </div>
         </div>
+      </div>
 
-        <div class="form-segment">
-          <textarea
-            rows="5"
-            cols="20"
-            placeholder="Please specify other reasons"
-          ></textarea>
-        </div>
+      <div class="form-segment">
+        <textarea rows="5" cols="20" placeholder="Please specify other reasons"></textarea>
+      </div>
 
-        <div class="button-container">
-          <input
-            class="brand-button"
-            type="submit"
-            name="customer-contact"
-            value="Send"
-          />
-        </div>
-      </form>
-    </div>
-  </body>
+      <div class="button-container">
+        <input class="brand-button" type="submit" name="customer-contact" value="Send" />
+      </div>
+    </form>
+  </div>
+</body>
+
 </html>
