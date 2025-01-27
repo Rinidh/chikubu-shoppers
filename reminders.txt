@@ -5,7 +5,7 @@ rgb(203, 218, 247) - 300
 rgb(220, 229, 247) - 200
 rgb(240, 244, 252) - 100
 
-
+about us.html
 how to prevent heading from going behind header upon cliking on-pg link
 show menu at 425px below (temporarily), don't show at tablet after finish all home page
 responsive design edit strategy (after initally designing for desktop):
@@ -32,6 +32,7 @@ JS TO ADD:
   -each item of 'dropdown in heeader & category-card' lead to same point in pdt pg. If user cliks on eg 'Groceries', use js t filter and lead to pdt pg only while only showing groceries
   -menu icon in small screen, side menu list appears. Close button in menu. (menu div has been set to appear only in 425px below, remove this)
   -in mobile, click filter button to show list
+  -mobile, show less text in startup/about-us pg. Button to show more
 
 At 100 zoom:
   width: 738px
