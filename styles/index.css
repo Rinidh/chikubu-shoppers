@@ -87,15 +87,16 @@ a {
 /* 'heading-text-block' is a general class used by all sections in the website having the basic design of 'a heading and text below it' */
 /* 'heading-text-block' must be applied to div in which are nested: div with 'heading-container' and a paragraph or div class 'text-container'. See "start-up" section after banner in about-us.html   */
 .heading-text-block {
-  margin: 60px 50px;
+  margin: 60px 10px;
   padding-bottom: 30px;
   border-bottom: 5px solid rgb(15, 57, 144);
 }
 
 .heading-text-block p,
 .heading-container .text {
+  font-size: 15px;
   margin-top: 15px;
-  padding-left: 40px;
+  text-align: center;
 }
 
 /* 'heading-container' is a general class used by any section with a heading and link-icon on the left */
@@ -224,14 +225,11 @@ a {
   /* 'heading-text-block' must be applied to div in which are nested: div with 'heading-container' and a paragraph or div class 'text-container'. See "start-up" section after banner in about-us.html   */
   .heading-text-block {
     margin: 60px 50px;
-    padding-bottom: 30px;
-    border-bottom: 5px solid rgb(15, 57, 144);
   }
 
   .heading-text-block p,
   .heading-container .text {
-    margin-top: 15px;
-    padding-left: 40px;
+    text-align: left;
   }
 
   /* 'heading-container' is a general class used by any section with a heading and link-icon on the left */
@@ -323,14 +321,9 @@ a {
 
   /* 'heading-text-block' is a general class used by all sections in the website having the basic design of 'a heading and text below it' */
   /* 'heading-text-block' must be applied to div in which are nested: div with 'heading-container' and a paragraph or div class 'text-container'. See "start-up" section after banner in about-us.html   */
-  .heading-text-block {
-    margin: 60px 50px;
-    padding-bottom: 30px;
-    border-bottom: 5px solid rgb(15, 57, 144);
-  }
-
   .heading-text-block p,
   .heading-container .text {
+    font-size: 20px;
     margin-top: 15px;
     padding-left: 40px;
   }
