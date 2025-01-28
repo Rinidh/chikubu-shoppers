@@ -1,19 +1,23 @@
 .my-cart-content {
   width: 100%;
-  padding: 25px;
+  padding: 20px 10px;
   display: flex;
+  flex-direction: column;
 }
 
 .my-cart-content .cards-grid {
   flex: 3;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   row-gap: 40px;
-  column-gap: 15px;
+}
+
+.brand-button {
+  white-space: nowrap;
 }
 
 .changes-sec {
   background-color: rgb(240, 244, 252);
-  height: 100px;
+  height: 80px;
   width: 100%;
   border-radius: 8px;
   margin-top: 8px;
@@ -29,11 +33,12 @@
 }
 
 .change-qty label {
-  font-size: 15px;
+  font-size: 12px;
 }
 
-.change-qty input {
+.change-qty .brand-input {
   width: 80px;
+  max-height: 44px;
 }
 
 .changes-sec .remove-from-cart-btn {
@@ -45,18 +50,14 @@
   border: 3px solid rgb(207, 3, 3);
 }
 
-.changes-sec .remove-from-cart-btn:hover {
-  color: rgb(207, 3, 3);
-  background-color: rgb(252, 223, 223);
-}
-
 .changes-sec .remove-from-cart-btn i {
   margin-right: 5px;
 }
 
 .summary {
   flex: 2;
-  padding: 0px 10px;
+  padding: 0px 5px;
+  margin-top: 55px;
 }
 
 .summary table {
@@ -74,13 +75,14 @@
 }
 
 .summary th {
-  padding: 5px 0px;
+  padding: 3px 0px;
+  font-size: 12px;
 }
 
 .summary tr {
   text-align: center;
   word-wrap: normal;
-  height: 50px;
+  height: auto;
 }
 
 .summary tr:nth-child(even) {
@@ -88,7 +90,7 @@
 }
 
 .summary td {
-  /* border: 2px solid red; */
+  font-size: 12px;
   border-right: 2px solid rgb(203, 218, 247);
   padding: 0px; /* remove default 1px padding; */
 }
@@ -101,49 +103,42 @@
   padding: 6px;
   text-align: end;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 15px;
   border-right: 0px;
 }
 
 .summary #total-row #tax-info {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 section.checkout {
   margin: 20px 0px;
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 
 .checkout .brand-button {
   position: relative;
-  margin: 0px 60px;
   width: 200px;
   text-align: center;
 }
 
 .checkout-buttons {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 110%;
   left: 0px;
-  visibility: hidden;
-  transition: visibility 200ms ease;
-}
-
-.checkout .brand-button:hover .checkout-buttons {
   visibility: visible;
+  transition: visibility 200ms ease;
 }
 
 .checkout-buttons button {
   margin: 6px 0px;
   padding: 10px;
-  height: 60px;
+  height: 50px;
   width: 200px;
   border-radius: 10px;
-}
-
-.checkout-buttons button:hover {
-  opacity: 0.7;
 }
 
 .checkout-buttons img {
@@ -160,4 +155,105 @@ section.checkout {
 .checkout-buttons .shop-pay-btn {
   background-color: rgb(246, 243, 243);
   border: 3px solid rgb(35, 1, 126);
+}
+
+@media only screen and (min-width: 600px) {
+  .my-cart-content {
+    padding: 25px;
+  }
+
+  .my-cart-content .cards-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+  }
+
+  .change-qty label {
+    font-size: 15px;
+  }
+
+  .summary table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .summary th {
+    padding: 5px 0px;
+    font-size: 15px;
+  }
+
+  .summary tr {
+    height: 50px;
+  }
+
+  .summary td {
+    font-size: 15px;
+  }
+
+  .summary #total-row td:first-child {
+    font-size: 15px;
+  }
+
+  .checkout {
+    justify-content: flex-end;
+  }
+
+  .checkout .brand-button {
+    margin: 0px 60px;
+  }
+
+  .checkout-buttons button {
+    margin: 6px 0px;
+    padding: 10px;
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .my-cart-content {
+    flex-direction: row;
+  }
+
+  .changes-sec {
+    height: 100px;
+  }
+
+  .changes-sec .remove-from-cart-btn:hover {
+    color: rgb(207, 3, 3);
+    background-color: rgb(252, 223, 223);
+  }
+
+  .summary {
+    margin-top: 0px;
+    padding: 0px 10px;
+  }
+
+  .summary th {
+    font-size: 20px;
+  }
+
+  .summary td {
+    font-size: 20px;
+  }
+
+  .summary #total-row td:first-child {
+    font-size: 20px;
+  }
+
+  .summary #total-row #tax-info {
+    font-size: 13px;
+  }
+
+  .checkout-buttons {
+    visibility: hidden;
+  }
+
+  .checkout .brand-button:hover .checkout-buttons {
+    visibility: visible;
+  }
+
+  .checkout-buttons button:hover {
+    opacity: 0.7;
+  }
 }
