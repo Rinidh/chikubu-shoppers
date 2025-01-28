@@ -11,6 +11,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 18vh;
   font-size: 20px;
 }
 
@@ -124,6 +125,13 @@ a {
   font-size: calc(1.5vw + 20px);
   margin-bottom: 8px;
 }
+
+/* .heading-container::before {  to prevent heading from appearing behind header upon cliking its id link
+  content: '';
+  display: block;
+  height: 300px;
+  margin-top: -300px;
+} */
 
 .heading-container a {
   display: flex;

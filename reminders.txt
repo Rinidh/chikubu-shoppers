@@ -7,9 +7,8 @@ rgb(240, 244, 252) - 100
 
 
 
-remove all duplicates in main file index.css
 how to prevent heading from going behind header upon cliking on-pg link
-show menu at 425px below (temporarily), don't show at tablet after finish all home page
+smooth scroll to heading
 responsive design edit strategy (after initally designing for desktop):
   -copy cuurent code into tablet's query
   -modify current code for mobile (as best to start mobile first)
