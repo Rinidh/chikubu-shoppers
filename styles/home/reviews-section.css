@@ -4,19 +4,19 @@
 
 .reviews-section h1 {
   font: 500 normal 40px 'fredoka';
+  margin-bottom: 40px;
   text-align: center;
 }
 
 .reviews-section .grid {
-  /* background-color: lightyellow; */
   display: grid;
-  width: 1400px;
-  height: 500px;
+  grid-template-columns: 1fr;
+  width: 90vw;
+  max-width: 1300px;
+  height: fit-content;
   margin-left: auto;
   margin-right: auto;
   /* value of auto ensures div.grid is horizontally centered */
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(20, 1fr);
   gap: 10px;
 }
 
@@ -27,20 +27,20 @@
 }
 
 .grid .personal-info {
-  height: 80px;
+  height: 50px;
   display: flex;
   align-items: center;
 }
 
 .personal-info .avatar {
-  width: 80px;
-  height: 80px;
+  height: 100%;
+  width: 50px; /* have to hard code it because 'width: auto' limits the box width to letter size; */
   margin-right: 10px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font: 300 normal 40px 'poppins';
+  font: 300 normal 30px 'poppins';
 }
 
 .personal-info .name-stars-container .stars {
@@ -49,34 +49,7 @@
 
 .review-text {
   margin: 15px 10px 10px 10px;
-}
-
-.grid .annet {
-  grid-row-start: 1;
-  grid-row-end: 11;
-  grid-column-start: 1;
-  grid-column-end: 5;
-}
-
-.grid .gohel {
-  grid-row-start: 11;
-  grid-row-end: 18;
-  grid-column-start: 1;
-  grid-column-end: 5;
-}
-
-.grid .candy {
-  grid-row-start: 1;
-  grid-row-end: 9;
-  grid-column-start: 5;
-  grid-column-end: 11;
-}
-
-.grid .bruce {
-  grid-row-start: 9;
-  grid-row-end: 20;
-  grid-column-start: 5;
-  grid-column-end: 10;
+  font: normal 400 17px /1.8 'poppins';
 }
 
 .grid .annet .avatar {
@@ -97,4 +70,53 @@
 .grid .bruce .avatar {
   background-color: rgb(132, 0, 197);
   color: white;
+}
+
+@media only screen and (min-width: 769px) {
+  .reviews-section .grid {
+    height: 500px;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .grid .personal-info {
+    height: 80px;
+  }
+
+  .personal-info .avatar {
+    width: 80px;
+    font-size: 40px;
+  }
+
+  .review-text {
+    font-size: 18px;
+  }
+
+  .grid .annet {
+    grid-row-start: 1;
+    grid-row-end: 11;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .grid .gohel {
+    grid-row-start: 11;
+    grid-row-end: 19;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .grid .candy {
+    grid-row-start: 1;
+    grid-row-end: 9;
+    grid-column-start: 5;
+    grid-column-end: 11;
+  }
+
+  .grid .bruce {
+    grid-row-start: 9;
+    grid-row-end: 21;
+    grid-column-start: 5;
+    grid-column-end: 10;
+  }
 }

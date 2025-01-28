@@ -1,12 +1,13 @@
 .search-filter-container {
   height: fit-content;
+  margin-top: 20px;
   padding: 25px;
   background-color: rgb(15, 57, 144);
   color: white;
 }
 
 .all .heading-container {
-  margin: 20px 0px;
+  margin: 10px 0px;
 }
 
 .search-filter-container .heading-container h1,
@@ -17,12 +18,13 @@
 
 .search-filter-box {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
 }
 
 .filter-container {
   display: flex;
   align-items: center;
+  margin-top: 40px;
 }
 
 .filter-dropdown {
@@ -32,24 +34,19 @@
 }
 
 .filter-dropdown button {
-  font-size: 23px;
+  font-size: 17px;
   background-color: rgb(240, 244, 252);
   color: rgb(15, 57, 144);
 }
 
 .filter-dropdown .brand-list {
   display: none;
-}
-
-.filter-dropdown:hover .brand-list {
-  display: block;
   position: absolute;
   top: 100%;
   left: 0px;
 }
 
 .search-container {
-  margin-right: 40px;
   position: relative;
 }
 
@@ -59,13 +56,13 @@
   position: relative;
 }
 
-.search-container .placeholder {
-  display: flex;
-  align-items: center;
+.search-container i {
+  font-size: 1em;
+  margin-left: 10px;
   color: rgba(15, 58, 144, 0.48);
   position: absolute;
-  top: 19px;
-  left: 90px;
+  top: 43px;
+  left: 10px;
   visibility: visible;
 }
 
@@ -73,34 +70,78 @@
   visibility: hidden; /* to hide icon when user wants to input; */
 }
 
-.search-container i {
-  margin-right: 10px;
-}
-
 .search-container .search-results {
-  height: 200px;
   width: 100%;
   position: absolute;
-  top: 100%;
-  left: 30px;
+  top: 110%;
+  left: 0px;
   z-index: 10;
 }
 
 .search-results .search-list-item {
   display: flex;
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 11px;
   font-weight: 400;
   margin: 0px 5px;
 }
 
 .search-results .search-list-name {
   width: 150px;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
 }
 
 .search-list-item .search-list-name,
 .search-list-item .search-list-price {
   display: inline-block;
+}
+
+@media only screen and (min-width: 600px) {
+  .all .heading-container {
+    margin: 20px 0px;
+  }
+
+  .search-filter-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .filter-container {
+    margin: 0;
+  }
+
+  .filter-dropdown button {
+    font-size: 20px;
+  }
+
+  .filter-dropdown:hover .brand-list {
+    display: block;
+  }
+
+  .search-container {
+    margin-right: 40px;
+  }
+
+  .search-container .brand-input {
+    margin-top: 10px;
+  }
+
+  .search-container i {
+    top: 53px;
+    font-size: 1.2em;
+  }
+
+  .search-results .search-list-item {
+    font-size: 15px;
+  }
+
+  .search-results .search-list-name {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  /* all same as above */
 }

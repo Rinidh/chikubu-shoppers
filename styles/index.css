@@ -11,10 +11,12 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 18vh;
+  font-size: 20px;
 }
 
 main {
-  margin-top: 20vh;
+  margin-top: 21vh;
 }
 
 a {
@@ -26,17 +28,13 @@ a {
 .brand-button {
   border: 3px solid rgb(15, 57, 144);
   border-radius: 8px;
-  padding: 11px 15px;
+  padding: 7px 10px;
   background-color: rgb(15, 57, 144);
   color: white;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 14px;
   transition: all 200ms ease;
   cursor: pointer;
-}
-.brand-button:hover {
-  background-color: rgb(220, 229, 247);
-  color: rgb(15, 57, 144);
 }
 
 /* global styles for all inputs */
@@ -46,7 +44,7 @@ a {
   border: 4px solid rgb(15, 57, 144);
   border-radius: 8px;
   font-size: 20px;
-  padding: 10px;
+  padding: 6px;
 }
 
 .brand-input:focus {
@@ -90,22 +88,25 @@ a {
 /* 'heading-text-block' is a general class used by all sections in the website having the basic design of 'a heading and text below it' */
 /* 'heading-text-block' must be applied to div in which are nested: div with 'heading-container' and a paragraph or div class 'text-container'. See "start-up" section after banner in about-us.html   */
 .heading-text-block {
-  margin: 60px 50px;
+  margin: 60px 10px;
   padding-bottom: 30px;
   border-bottom: 5px solid rgb(15, 57, 144);
 }
 
 .heading-text-block p,
 .heading-container .text {
+  font-size: 15px;
   margin-top: 15px;
-  padding-left: 40px;
+  text-align: center;
 }
 
 /* 'heading-container' is a general class used by any section with a heading and link-icon on the left */
 /* 'heading-container' must be applied to div in which are nested: anchor (<a>), heading (<h1>), icon (<i class="fas fa-link"> specifically). See "start-up" section after banner in about-us.html   */
 .heading-container {
   display: flex;
-  margin: 60px 0px 10px 50px;
+  justify-content: center;
+  margin: 0px 0px 10px 10px;
+  padding-top: 10px;
 }
 
 .heading-text-block .heading-container {
@@ -114,25 +115,23 @@ a {
 }
 
 .heading-container i {
-  color: rgb(15, 57, 144);
-  visibility: hidden;
-  margin-right: 10px;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-}
-
-.heading-container:hover i {
-  visibility: visible;
+  display: none;
 }
 
 .heading-container h1 {
   color: rgb(15, 57, 144);
   margin: 0px;
   flex: 1;
-  font-size: 40px;
+  font-size: calc(1.5vw + 20px);
   margin-bottom: 8px;
 }
+
+/* .heading-container::before {  to prevent heading from appearing behind header upon cliking its id link
+  content: '';
+  display: block;
+  height: 300px;
+  margin-top: -300px;
+} */
 
 .heading-container a {
   display: flex;
@@ -161,10 +160,6 @@ a {
   transition: all 200ms ease;
 }
 
-.brand-list li:hover {
-  background-color: rgb(220, 229, 247);
-}
-
 /* global styles for close-buttons in any modal, popover etc */
 .close-button {
   position: absolute;
@@ -178,4 +173,80 @@ a {
 
 .close-button:hover {
   background-color: rgba(15, 58, 144, 0.2);
+}
+
+@media only screen and (min-width: 600px) {
+  /* brand-button is the general styling for any catchy button */
+  .brand-button {
+    padding: 11px 15px;
+    font-size: 20px;
+  }
+  .brand-button:hover {
+    background-color: rgb(220, 229, 247);
+    color: rgb(15, 57, 144);
+  }
+
+  /* global styles for all inputs */
+  .brand-input {
+    padding: 10px;
+  }
+
+  /* global styles for ALL newsletter-box / email-input boxes */
+  .newsletter label {
+    display: block;
+  }
+
+  /* 'heading-text-block' is a general class used by all sections in the website having the basic design of 'a heading and text below it' */
+  /* 'heading-text-block' must be applied to div in which are nested: div with 'heading-container' and a paragraph or div class 'text-container'. See "start-up" section after banner in about-us.html   */
+  .heading-text-block {
+    margin: 60px 50px;
+  }
+
+  .heading-text-block p,
+  .heading-container .text {
+    text-align: left;
+  }
+
+  /* 'heading-container' is a general class used by any section with a heading and link-icon on the left */
+  /* 'heading-container' must be applied to div in which are nested: anchor (<a>), heading (<h1>), icon (<i class="fas fa-link"> specifically). See "start-up" section after banner in about-us.html   */
+  .heading-container {
+    margin-left: 20px;
+    justify-content: left;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  /* 'heading-text-block' is a general class used by all sections in the website having the basic design of 'a heading and text below it' */
+  /* 'heading-text-block' must be applied to div in which are nested: div with 'heading-container' and a paragraph or div class 'text-container'. See "start-up" section after banner in about-us.html   */
+  .heading-text-block p,
+  .heading-container .text {
+    font-size: 20px;
+    margin-top: 15px;
+    padding-left: 40px;
+  }
+
+  /* 'heading-container' is a general class used by any section with a heading and link-icon on the left */
+  /* 'heading-container' must be applied to div in which are nested: anchor (<a>), heading (<h1>), icon (<i class="fas fa-link"> specifically). See "start-up" section after banner in about-us.html   */
+  .heading-container {
+    margin-left: 10px;
+  }
+
+  .heading-container i {
+    display: inline-block;
+    color: rgb(15, 57, 144);
+    visibility: hidden;
+    margin-right: 10px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .heading-container:hover i {
+    visibility: visible;
+  }
+
+  /* global styles for all <ul>/<ol> lists */
+  .brand-list li:hover {
+    background-color: rgb(220, 229, 247);
+  }
 }

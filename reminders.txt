@@ -4,13 +4,20 @@ rgba(15, 58, 144, 0.48) - 800
 rgb(203, 218, 247) - 300
 rgb(220, 229, 247) - 200
 rgb(240, 244, 252) - 100
-At 100 zoom:
-  width: 738px
-  height: 1513px
 
 
-deploy to vercel
-update direct pdt sharing links in pdt modal after deploying app. Check thoroughly @ (each) link
+
+how to prevent heading from going behind header upon cliking on-pg link
+smooth scroll to heading
+responsive design edit strategy (after initally designing for desktop):
+  -copy cuurent code into tablet's query
+  -modify current code for mobile (as best to start mobile first)
+  -keep comparing & eliminating unnecessary props from tablet's code
+  -copy tablet's code into laptop code (to prevent some laptop props from del) & now edit tablet's code (comparing to mobile & as seen in browser)
+  -finally laptop's code
+  -first make one component responsive at ALL screen sizes, then next component; instead of making all components responsive at mobile, then all components responsive for laptop
+merge this new branxh but leave it undeleted
+
 
 JS TO ADD:
   -filter products acc to dropdown, reload pdt cards with new headings eg for "by category": clothing, electronics... and for "by popularity": most loved & others
@@ -25,8 +32,14 @@ JS TO ADD:
   -top-fold close button
   -upon cliking heading link, heading goes behind header - disappear header upon scroll
   -each item of 'dropdown in heeader & category-card' lead to same point in pdt pg. If user cliks on eg 'Groceries', use js t filter and lead to pdt pg only while only showing groceries
+  -menu icon in small screen, side menu list appears. Close button in menu. (menu div has been set to appear only in 425px below, remove this)
+  -in mobile, click filter button to show list
+  -mobile, show less text in startup/about-us pg. Button to show more
+  -click checkout button in cart.html to show paypal & shoppay
 
-
+At 100 zoom:
+  width: 738px
+  height: 1513px
   
 COMPONENTS (SNIPPETS) TO MAKE:
   - magnifying glass and text as placeholder to <input>, which disappears on inputting text
@@ -36,6 +49,14 @@ COMPONENTS (SNIPPETS) TO MAKE:
   - <button> with border-width of 1px and on hover, border-width of 2px without causing nearby divs to move (box-sizing: border-box doesn't work)
 
 ------------------------
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 769px) {
+  
+}
+
 
 
 
