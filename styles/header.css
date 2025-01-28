@@ -1,6 +1,6 @@
 header {
   background-color: rgb(220, 229, 247);
-  height: 15vh;
+  height: 10vh;
   width: 100vw;
   margin-bottom: 30px;
   display: flex;
@@ -23,7 +23,7 @@ nav.small-screen {
   display: flex;
   align-items: center;
   margin-right: min(4vw, 20px);
-  font: normal 700 26px /1 'fredoka';
+  font: normal 700 23px /1 'fredoka';
 }
 
 nav.small-screen .menu-button {
@@ -37,7 +37,7 @@ nav.small-screen .menu-button {
 }
 
 nav.small-screen .menu {
-  display: none; /* block; temorarily hide small screen menu */
+  display: none; /* set to 'block'; temorarily hide small screen menu */
   position: fixed;
   top: 0px;
   right: 0px;
@@ -50,8 +50,9 @@ nav.small-screen .menu {
 
 nav.small-screen .menu div {
   display: block;
-  margin: 30px 0px;
-  font-size: 29px;
+  margin: 15px 0px;
+  padding: 15px 0px;
+  border-bottom: 2px solid rgb(15, 57, 144);
 }
 
 nav.small-screen .menu .close-button {
@@ -61,20 +62,11 @@ nav.small-screen .menu .close-button {
 
 @media only screen and (min-width: 769px) {
   header {
-    background-color: rgb(220, 229, 247);
-    height: 15vh;
-    width: 100vw;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    top: 35px;
-    z-index: 90;
+    height: 12vh;
   }
 
-  img {
-    height: 100%;
-    width: auto;
+  .nav-container {
+    justify-content: center;
   }
 
   nav.large-screen {
@@ -100,12 +92,6 @@ nav.small-screen .menu .close-button {
 
   nav.small-screen {
     display: none;
-  }
-
-  .nav-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
   }
 
   .dropdown {
@@ -143,9 +129,9 @@ nav.small-screen .menu .close-button {
   }
 }
 
-/* side menu has been set to only show at 425px & below, remove this after adding JS to close button */
-@media only screen and (min-width: 426px) {
+/* side menu can be set to only show at 425px & below for demo, remove this after adding JS to close button */
+/* @media only screen and (min-width: 426px) {
   nav.small-screen .menu {
     display: none;
   }
-}
+} */
